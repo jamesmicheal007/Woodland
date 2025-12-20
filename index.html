@@ -8,26 +8,19 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Google Web Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <!--<link href="css/pointerNew.css" rel="stylesheet">
-    <script src="js/pointerNew.js"></script>-->
 </head>
 
 <body>
@@ -48,7 +41,7 @@
                 </div>
 
                 <div class="col-md-4 col-lg-3">
-                    <a href="index.html" class="region-card text-decoration-none" data-region="london">
+                    <a href="index-london.html" class="region-card text-decoration-none" data-region="london">
                         <div class="card region-card-inner">
                             <img src="img/landmarks/london_tower_bridge.jpg" class="card-img-top region-card-img" alt="London Tower Bridge">
                             <div class="card-body">
@@ -59,7 +52,7 @@
                 </div>
 
                 <div class="col-md-4 col-lg-3">
-                    <a href="index.html" class="region-card text-decoration-none" data-region="mumbai">
+                    <a href="index-india.html" class="region-card text-decoration-none" data-region="india">
                         <div class="card region-card-inner">
                             <img src="img/landmarks/mumbai_gateway.jpg" class="card-img-top region-card-img" alt="Mumbai Gateway of India">
                             <div class="card-body">
@@ -72,33 +65,24 @@
             </div>
         </div>
     </div>
+
     <div id="cursor-container"></div>
-    <!-- Spinner Start -->
+
     <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
-    <!-- Spinner End -->
-    <!-- Navbar Start -->
     <div class="container-fluid navbar-container bg-navbar">
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0 sticky-top">
-                <!-- Brand -->
-                <!--<a href="index.html" class="navbar-brand">
-                    <h1 class="text-white fw-bold d-block">
-                        WoodLand <span class="text-secondary">Group</span>
-                    </h1>
-                </a>-->
                 <a href="index.html" class="navbar-brand">
                     <img src="img/logo-small.png" alt="Woodland Group" class="img-fluid" style="max-height:60px;">
                 </a>
 
-                <!-- Toggler -->
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse bg-transparent border-end" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
@@ -106,7 +90,6 @@
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="project.html" class="nav-item nav-link">Projects</a>
 
-                        <!-- Dropdown -->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded">
@@ -118,12 +101,9 @@
                         </div>
 
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-
-                        
                     </div>
                 </div>
 
-                <!-- Contact Info / Phone -->
                 <div class="d-none d-xl-flex flex-shrink-0" style="padding-left:20px">
                     <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
                         <a href="tel:+971504408582" class="position-relative animated tada infinite">
@@ -148,7 +128,7 @@
                             <a href="index-london.html" class="dropdown-item region-select-link" data-region="london">
                                 🇬🇧 London – UK
                             </a>
-                            <a href="https://your-mumbai-site.com" class="dropdown-item region-select-link" data-region="mumbai">
+                            <a href="index-india.html" class="dropdown-item region-select-link" data-region="india">
                                 🇮🇳 Mumbai – India
                             </a>
                         </div>
@@ -157,52 +137,17 @@
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->
-    <!-- Carousel Start -->
     <div class="container-fluid px-0">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
-            <!-- Carousel Inner -->
             <div class="carousel-inner">
-                <!-- First Slide with YouTube -->
-                <!--<div class="carousel-item active">
-                <div class="ratio ratio-16x9">-->
-                <!-- Bootstrap responsive video wrapper -->
-                <!--<iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1&mute=1&loop=1&playlist=8GK79NE6-ow"
-                                title="YouTube video"
-                                allow="autoplay; fullscreen"
-                                allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="carousel-caption">
-                        <h1 class="text-white">Innovative IT Solutions</h1>
-                        <p class="text-white">We provide top-quality IT services.</p>
-                    </div>
-                </div>-->
-                <!-- Second Slide (Image Example) -->
-                <!--<div class="carousel-item">
-                <div class="ratio ratio-16x9">-->
-                <!-- Bootstrap responsive video wrapper -->
-                <!--<iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1&mute=1&loop=1&playlist=f5fzixvUO3U"
-                                title="YouTube video"
-                                allow="autoplay; fullscreen"
-                                allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="carousel-caption">
-                        <h1 class="text-white">Innovative IT Solutions</h1>
-                        <p class="text-white">We provide top-quality IT services.</p>
-                    </div>
-                </div>-->
-                <!-- First Slide -->
                 <div class="carousel-item active">
-                    <video class="carousel-video" autoplay loop muted playsinline>
+                    <video class="carousel-video" autoplay loop muted playsinline poster="img/carousel-1.jpg">
                         <source src="video/video1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -212,9 +157,8 @@
                     </div>
                 </div>
 
-                <!-- Second Slide -->
                 <div class="carousel-item">
-                    <video class="carousel-video" autoplay loop muted playsinline>
+                    <video class="carousel-video" autoplay loop muted playsinline poster="img/carousel-2.jpg">
                         <source src="video/video2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -224,9 +168,8 @@
                     </div>
                 </div>
 
-                <!-- Third Slide -->
                 <div class="carousel-item">
-                    <video class="carousel-video" autoplay loop muted playsinline>
+                    <video class="carousel-video" autoplay loop muted playsinline poster="img/carousel-1.jpg">
                         <source src="video/video3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -238,7 +181,6 @@
 
             </div>
 
-            <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -250,8 +192,6 @@
         </div>
 
     </div>
-    <!-- Carousel End -->
-    <!-- Fact Start -->
     <div class="container-fluid bg-secondary py-5">
         <div class="container">
             <div class="row">
@@ -282,8 +222,6 @@
             </div>
         </div>
     </div>
-    <!-- Fact End -->
-    <!-- About Start -->
     <div class="container-fluid">
         <div class="container pt-5">
             <div class="row g-5">
@@ -306,14 +244,10 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
-    <!-- Services Start -->
     <div class="container-fluid services py-5 mb-5">
-        <!-- Overlay for readability -->
         <div class="overlay"></div>
 
         <div class="container">
-            <!-- Section Title -->
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                 <h5 class="text-white">Our Services</h5>
                 <h1>Services Built Specifically For Your Business</h1>
@@ -321,73 +255,67 @@
 
             <div class="row g-5 services-inner">
 
-                <!-- Interior Fit-Outs -->
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="services-item bg-servicecard">
                         <div class="p-4 text-center services-content">
                             <img src="img/services/interior-fitout.jpg" alt="Interior Fit-Outs" class="service-img mb-4">
                             <h4 class="mb-3">Interior Fit-Outs</h4>
-                            <p class="mb-4 text-white" ">Custom interior solutions for offices, retail stores, and commercial spaces that reflect your brand identity.</p>
+                            <p class="mb-4 text-white">Custom interior solutions for offices, retail stores, and commercial spaces that reflect your brand identity.</p>
                             <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Joinery Works -->
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="services-item bg-servicecard">
                         <div class="p-4 text-center services-content">
                             <img src="img/services/joinery-works.jpg" alt="Joinery Works" class="service-img mb-4">
                             <h4 class="mb-3">Joinery Works</h4>
-                            <p class="mb-4 text-white" ">High-quality woodwork, furniture, and custom joinery solutions for both commercial and residential projects.</p>
+                            <p class="mb-4 text-white">High-quality woodwork, furniture, and custom joinery solutions for both commercial and residential projects.</p>
                             <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Event Set-Up -->
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="services-item bg-servicecard">
                         <div class="p-4 text-center services-content">
                             <img src="img/services/event-setup.jpg" alt="Event Set-Up" class="service-img mb-4">
                             <h4 class="mb-3">Event Set-Up</h4>
-                            <p class="mb-4 text-white" ">Complete event setup services including stage design, lighting, sound, and thematic decor for every occasion.</p>
+                            <p class="mb-4 text-white">Complete event setup services including stage design, lighting, sound, and thematic decor for every occasion.</p>
                             <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Exhibition Stands -->
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="services-item bg-servicecard">
                         <div class="p-4 text-center services-content">
                             <img src="img/services/exhibition-stands.jpg" alt="Exhibition Stands" class="service-img mb-4">
                             <h4 class="mb-3">Exhibition Stands</h4>
-                            <p class="mb-4 text-white" ">Design and installation of innovative exhibition stands to make your brand stand out at trade shows.</p>
+                            <p class="mb-4 text-white">Design and installation of innovative exhibition stands to make your brand stand out at trade shows.</p>
                             <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kiosk & Retail Solutions -->
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="services-item bg-servicecard">
                         <div class="p-4 text-center services-content">
                             <img src="img/services/kiosk.jpg" alt="Kiosk Design" class="service-img mb-4">
                             <h4 class="mb-3">Kiosk & Retail Solutions</h4>
-                            <p class="mb-4 text-white" ">Custom-designed kiosks and retail spaces to create a unique shopping experience for your customers.</p>
+                            <p class="mb-4 text-white">Custom-designed kiosks and retail spaces to create a unique shopping experience for your customers.</p>
                             <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Digital Printing -->
                 <div class="col-md-6 col-lg-4 service-card">
                     <div class="services-item bg-servicecard">
                         <div class="p-4 text-center services-content">
-                            <img src="img/services/digital-printing.jpg" alt="Digital Printing" class="service-img mb-4">
+                            <img src="img/services/digital-printing1.jpg" alt="Digital Printing" class="service-img mb-4">
                             <h4 class="mb-3">Digital Printing</h4>
-                            <p class="mb-4 text-white" ">High-quality digital printing services for banners, signage, flyers, and marketing materials.</p>
+                            <p class="mb-4 text-white">High-quality digital printing services for banners, signage, flyers, and marketing materials.</p>
                             <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
@@ -396,8 +324,6 @@
             </div>
         </div>
     </div>
-    <!-- Services End -->
-    <!-- Project Start -->
     <div class="container-fluid project py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
@@ -408,7 +334,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-1.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -416,7 +341,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-2.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -424,7 +348,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-3.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -432,7 +355,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-4.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -440,7 +362,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-5.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -448,7 +369,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-6.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -456,7 +376,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-7.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -464,7 +383,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-8.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -472,7 +390,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-9.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -480,7 +397,6 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <!-- Add class clickable-img -->
                             <img src="img/project-10.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
                         </div>
                     </div>
@@ -488,19 +404,14 @@
             </div>
         </div>
     </div>
-    <!-- Project End -->
-    <!-- Testimonial Start -->
     <section class="container-fluid testimonial">
         <div class="container">
-            <!-- Section Title -->
             <div class="text-center mx-auto wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                 <h5 class="text-primary">Our Testimonial</h5>
                 <h1>What Our Clients Say!</h1>
             </div>
 
-            <!-- Owl Carousel -->
             <div class="owl-carousel testimonial-carousel">
-                <!-- Testimonial 1 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-1.jpg" alt=""></div>
@@ -521,7 +432,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-2.jpg" alt=""></div>
@@ -542,7 +452,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-3.jpg" alt=""></div>
@@ -563,7 +472,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 4 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-4.jpg" alt=""></div>
@@ -584,7 +492,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 5 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-5.jpg" alt=""></div>
@@ -605,7 +512,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 6 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-2.jpg" alt=""></div>
@@ -626,7 +532,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 7 -->
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center mb-3">
                         <div><img src="img/testimonial-7.jpg" alt=""></div>
@@ -650,14 +555,12 @@
 
         </div>
     </section>
-    <!-- Testimonial End -->
-    <!-- Contact Start -->
     <div class="container-fluid py-5 mb-5">
         <div class="container">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                 <h5 class="text-primary">Get In Touch</h5>
                 <h1 class="mb-3">Contact for any query</h1>
-                <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                <p class="mb-2">Have a project in mind? Reach out to us for a consultation or quote. Our team is ready to help bring your vision to life.</p>
             </div>
             <div class="contact-detail position-relative p-5">
                 <div class="row g-5 mb-5 justify-content-center">
@@ -724,14 +627,11 @@
             </div>
         </div>
     </div>
-    <!-- Contact End -->
     <section class="clients-section py-5">
-
         <div class="container">
             <h5 class="text-primary text-center mb-4">OUR CLIENTS</h5>
             <div class="clients-slider">
                 <div class="clients-track" id="clientsTrack">
-                    <!-- 24 Client Logos -->
                     <div class="client-item"><img src="img/clients/1.png" alt="Client 1"></div>
                     <div class="client-item"><img src="img/clients/2.png" alt="Client 2"></div>
                     <div class="client-item"><img src="img/clients/3.png" alt="Client 3"></div>
@@ -761,10 +661,6 @@
         </div>
     </section>
 
-
-
-
-    <!-- Footer Start -->
     <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
         <div class="container pt-5 pb-4">
             <div class="row g-5">
@@ -815,25 +711,21 @@
                     <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Woodland Group</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <span class="text-light">Designed By <a href="https://bluelinestechsolutions.com/">Bluelines Tech Solutions</a></span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-    <!-- Fullscreen Modal -->
     <div id="imgModal" class="img-modal">
-        <span class="close">&times;</span>
+        <span class="close">×</span>
         <img class="modal-content" id="fullImg">
     </div>
+
     <div id="pointer-ring" class="d-none" style="border-color: rgb(196, 196, 196); padding: 15px; transform: translate(823px, 346px);"></div>
     <div id="pointer-dot" class="d-none" style="color:white;border-color: white; transform: translate(332px, 344px);"></div>
 
-    <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
 
-    <!-- Social Media Icons -->
     <div class="sidesocial">
         <ul>
             <li>
@@ -856,8 +748,6 @@
 
     <script src="cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js" type="text/javascript"></script>
 
-
-    <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -865,15 +755,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/pointer.js"></script>
-    <!--<script>
-        init_pointer({
-            pointerColor: "#FF671F", // Css color
-            ringSize: 15, // Pixels
-            ringClickSize: 10 // Pixels when clicking
-        })
-    </script>-->
-    <!-- Template Javascript -->
+
     <script src="js/main.js"></script>
+
     <script>
         // Get modal elements
         var modal = document.getElementById("imgModal");
@@ -900,45 +784,46 @@
             }
         });
 
-        // ✅ Close modal when pressing ESC key
+        // Close modal when pressing ESC key
         document.addEventListener("keydown", function (e) {
             if (e.key === "Escape") {
                 modal.style.display = "none";
             }
         });
     </script>
-    <!-- GSAP CDN -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const track = document.getElementById('clientsTrack');
+            if (track) {
+                // Duplicate logos for seamless scroll
+                track.innerHTML += track.innerHTML;
 
-            // Duplicate logos for seamless scroll
-            track.innerHTML += track.innerHTML;
+                const trackWidth = track.scrollWidth / 2;
 
-            const trackWidth = track.scrollWidth / 2;
-
-            // Horizontal scroll
-            gsap.to(track, {
-                x: `-${trackWidth}px`,
-                duration: 50,   // adjust scroll speed
-                ease: "linear",
-                repeat: -1
-            });
-
-            // Floating & 3D tilt animation for each logo
-            const items = document.querySelectorAll('.client-item');
-            items.forEach(item => {
-                gsap.to(item, {
-                    y: "-=10",
-                    rotationY: "+=5",
-                    rotationX: "+=3",
-                    duration: 1 + Math.random(),
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut"
+                // Horizontal scroll
+                gsap.to(track, {
+                    x: `-${trackWidth}px`,
+                    duration: 50,   // adjust scroll speed
+                    ease: "linear",
+                    repeat: -1
                 });
-            });
+
+                // Floating & 3D tilt animation for each logo
+                const items = document.querySelectorAll('.client-item');
+                items.forEach(item => {
+                    gsap.to(item, {
+                        y: "-=10",
+                        rotationY: "+=5",
+                        rotationX: "+=3",
+                        duration: 1 + Math.random(),
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut"
+                    });
+                });
+            }
         });
     </script>
 
@@ -963,7 +848,6 @@
             // Animate testimonial items on load
             gsap.from(".testimonial-item", {
                 y: 50,
-                /* opacity: 0,*/
                 duration: 1,
                 stagger: 0.2,
                 ease: "power3.out"
@@ -982,25 +866,25 @@
         });
     </script>
 
-    <!-- GSAP Animation Script -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script>
         // Animate Services on Scroll
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.from(".service-card", {
-            scrollTrigger: {
-                trigger: ".services-inner",
-                start: "top 80%",
-            },
-            y: 50,
-            opacity: 0,
-            scale: 0.95,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "power3.out"
-        });
+        if (document.querySelector(".service-card")) {
+            gsap.from(".service-card", {
+                scrollTrigger: {
+                    trigger: ".services-inner",
+                    start: "top 80%",
+                },
+                y: 50,
+                opacity: 0,
+                scale: 0.95,
+                duration: 0.8,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+        }
 
         // Optional: Hover floating effect
         document.querySelectorAll('.services-item').forEach(item => {
@@ -1022,77 +906,7 @@
             item.addEventListener('mouseleave', () => gsap.to(item, { scale: 1, duration: 0.3 }));
         });
     </script>
-    <script>
-        $(document).ready(function () {
-            const regionSelector = $('#region-selector-overlay');
-            const cookieName = 'user_region';
 
-            // Function to set a cookie
-            function setCookie(name, value, days) {
-                var expires = "";
-                if (days) {
-                    var date = new Date();
-                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                    expires = "; expires=" + date.toUTCString();
-                }
-                document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax"; // Added SameSite=Lax
-            }
-
-            // Function to get a cookie
-            function getCookie(name) {
-                var nameEQ = name + "=";
-                var ca = document.cookie.split(';');
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-                }
-                return null;
-            }
-
-            // Check if the region cookie exists
-            const chosenRegion = getCookie(cookieName);
-
-            if (chosenRegion) {
-                // If cookie exists, hide the selector immediately
-                regionSelector.hide();
-                // Optional: Redirect based on cookie if you have different domains/paths
-                // console.log("Region already selected:", chosenRegion);
-                // If your sites are on different URLs (e.g., dubai.domain.com),
-                // you might not need redirection here, as the cookie targets the specific domain.
-                // If they are paths (e.g., domain.com/dubai), you might redirect:
-                // var currentPathRegion = window.location.pathname.split('/')[1];
-                // if (currentPathRegion !== chosenRegion && chosenRegion === 'london') {
-                //     window.location.href = '/london/'; // Or the full URL
-                // } // Add similar checks for dubai, mumbai
-            } else {
-                // If no cookie, show the selector
-                regionSelector.show();
-            }
-
-            // Handle clicks on region cards
-            $('.region-card').on('click', function (e) {
-                // Don't prevent default navigation, we want the link to work
-                // e.preventDefault(); // Remove this line if you want the link to navigate immediately
-
-                const selectedRegion = $(this).data('region');
-                const targetUrl = $(this).attr('href');
-
-                // Set the cookie for 30 days
-                setCookie(cookieName, selectedRegion, 30);
-                console.log("Region selected and cookie set:", selectedRegion);
-
-                // Hide the selector visually (optional, as navigation will happen)
-                regionSelector.fadeOut();
-
-                // Optional: If you *don't* want immediate navigation via href,
-                // uncomment the e.preventDefault() above and uncomment the line below
-                // window.location.href = targetUrl;
-            });
-
-
-        }); // End of document ready
-    </script>
 </body>
 
 </html>
