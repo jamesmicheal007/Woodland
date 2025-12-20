@@ -1,0 +1,32 @@
+/* Option 1: Using a separate file (style-london.css) */
+/* Or Option 2: Add these rules to style.css */
+
+/* Target elements specific to London using the body class */
+body.region-london {
+    --bs-primary: #FF671F; /* Keep primary orange */
+    --bs-secondary: #4a6f9a; /* Example: Sophisticated blue-grey for secondary */
+    --bs-woodprimary: var(--bs-primary); /* Keep woodprimary as primary */
+}
+
+    /* Override specific elements if needed */
+    body.region-london .bg-secondary {
+        background-color: var(--bs-secondary) !important;
+    }
+
+    body.region-london .text-secondary {
+        color: var(--bs-secondary) !important;
+    }
+    /* Add more overrides as necessary */
+
+    body.region-london .btn-secondary {
+        color: #fff; /* White text on the new blue-grey */
+        background-color: var(--bs-secondary);
+        border-color: var(--bs-secondary);
+    }
+
+        body.region-london .btn-secondary:hover {
+            color: #fff;
+            background-color: #3b597b; /* Darker shade for hover */
+            border-color: #354f6d;
+        }
+/* Add focus, active states if needed */
