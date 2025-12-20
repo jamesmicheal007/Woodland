@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Woodland Group DUBAI - Dubai Fit-Outs, Events & Joinery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/pointerNew.css" rel="stylesheet">
+    <script src="js/pointerNew.js"></script>-->
+</head>
+
+<body>
+    <div id="region-selector-overlay" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; align-items: center; justify-content: center;">
+        <div class="container text-center text-white">
+            <h2 class="mb-4 text-white">Where are you visiting us from?</h2>
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-4 col-lg-3">
+                    <a href="index.html" class="region-card text-decoration-none" data-region="dubai">
+                        <div class="card region-card-inner">
+                            <img src="img/landmarks/dubai_skyline.jpg" class="card-img-top region-card-img" alt="Dubai Skyline">
+                            <div class="card-body">
+                                <h5 class="card-title">Dubai – UAE</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <a href="index.html" class="region-card text-decoration-none" data-region="london">
+                        <div class="card region-card-inner">
+                            <img src="img/landmarks/london_tower_bridge.jpg" class="card-img-top region-card-img" alt="London Tower Bridge">
+                            <div class="card-body">
+                                <h5 class="card-title">London – UK</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <a href="index.html" class="region-card text-decoration-none" data-region="mumbai">
+                        <div class="card region-card-inner">
+                            <img src="img/landmarks/mumbai_gateway.jpg" class="card-img-top region-card-img" alt="Mumbai Gateway of India">
+                            <div class="card-body">
+                                <h5 class="card-title">Mumbai – India</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="cursor-container"></div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid navbar-container bg-navbar">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0 sticky-top">
+                <!-- Brand -->
+                <!--<a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold d-block">
+                        WoodLand <span class="text-secondary">Group</span>
+                    </h1>
+                </a>-->
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo-small.png" alt="Woodland Group" class="img-fluid" style="max-height:60px;">
+                </a>
+
+                <!-- Toggler -->
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse bg-transparent border-end" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+
+                        <!-- Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded">
+                                <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                        
+                    </div>
+                </div>
+
+                <!-- Contact Info / Phone -->
+                <div class="d-none d-xl-flex flex-shrink-0" style="padding-left:20px">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="tel:+971504408582" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-woodprimary fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px;">
+                                <span><i class="fa fa-comment-dots text-white"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-4 border-end">
+                        <span class="text-white">Have any questions?</span>
+                        <span class="text-secondary">Call: +971 50 440 8582</span>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-woodprimary" data-bs-toggle="dropdown" id="regionDropdownToggle">
+                            <i class="fas fa-globe me-1"></i> Region
+                        </a>
+                        <div class="dropdown-menu rounded">
+                            <a href="index.html" class="dropdown-item region-select-link" data-region="dubai">
+                                🇦🇪 Dubai – UAE
+                            </a>
+                            <a href="index-london.html" class="dropdown-item region-select-link" data-region="london">
+                                🇬🇧 London – UK
+                            </a>
+                            <a href="https://your-mumbai-site.com" class="dropdown-item region-select-link" data-region="mumbai">
+                                🇮🇳 Mumbai – India
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <!-- First Slide with YouTube -->
+                <!--<div class="carousel-item active">
+                <div class="ratio ratio-16x9">-->
+                <!-- Bootstrap responsive video wrapper -->
+                <!--<iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1&mute=1&loop=1&playlist=8GK79NE6-ow"
+                                title="YouTube video"
+                                allow="autoplay; fullscreen"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Innovative IT Solutions</h1>
+                        <p class="text-white">We provide top-quality IT services.</p>
+                    </div>
+                </div>-->
+                <!-- Second Slide (Image Example) -->
+                <!--<div class="carousel-item">
+                <div class="ratio ratio-16x9">-->
+                <!-- Bootstrap responsive video wrapper -->
+                <!--<iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1&mute=1&loop=1&playlist=f5fzixvUO3U"
+                                title="YouTube video"
+                                allow="autoplay; fullscreen"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Innovative IT Solutions</h1>
+                        <p class="text-white">We provide top-quality IT services.</p>
+                    </div>
+                </div>-->
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <video class="carousel-video" autoplay loop muted playsinline>
+                        <source src="video/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Transforming Interiors</h1>
+                        <p class="text-white">Premium Fit-Outs & Joinery in UAE</p>
+                    </div>
+                </div>
+
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <video class="carousel-video" autoplay loop muted playsinline>
+                        <source src="video/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Events & Exhibitions</h1>
+                        <p class="text-white">Creative Stands & Seamless Setups</p>
+                    </div>
+                </div>
+
+                <!-- Third Slide -->
+                <div class="carousel-item">
+                    <video class="carousel-video" autoplay loop muted playsinline>
+                        <source src="video/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Digital Printing & Kiosks</h1>
+                        <p class="text-white">High-Quality, Fast & Reliable</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    <!-- Carousel End -->
+    <!-- Fact Start -->
+    <div class="container-fluid bg-secondary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">99</h1>
+                        <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">25</h1>
+                        <h5 class="text-white mt-1">Thousands of successful business</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">120</h1>
+                        <h5 class="text-white mt-1">Total clients who love Woodland Group</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">5</h1>
+                        <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+    <!-- About Start -->
+    <div class="container-fluid">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                    <div class="h-100 position-relative">
+                        <img src="img/about-2.png" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                            <img src="img/about-1.png" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <h5 class="text-primary">About Us</h5>
+                    <h1 class="mb-4">About Woodland Group</h1>
+                    <p>Woodland Group is a leading provider of <strong>interior fit-outs, joinery works, event setups, exhibition stands, kiosks, and digital printing services</strong> in the UAE. Combining creativity, precision, and innovation, we deliver <strong>customized solutions</strong> tailored to each client’s vision and requirements. From concept to execution, our skilled team ensures <strong>high-quality, aesthetically appealing, and functional projects</strong> that leave a lasting impression.</p>
+                    <p>Our commitment to excellence drives us to stay ahead of industry trends and implement <strong>innovative techniques and sustainable practices</strong> in every project. Whether it’s designing a corporate space, setting up an exhibition, or creating striking printed materials, Woodland Group ensures every detail reflects professionalism, quality, and client satisfaction.</p>
+                    <a href="about.html" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Services Start -->
+    <div class="container-fluid services py-5 mb-5">
+        <!-- Overlay for readability -->
+        <div class="overlay"></div>
+
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-white">Our Services</h5>
+                <h1>Services Built Specifically For Your Business</h1>
+            </div>
+
+            <div class="row g-5 services-inner">
+
+                <!-- Interior Fit-Outs -->
+                <div class="col-md-6 col-lg-4 service-card">
+                    <div class="services-item bg-servicecard">
+                        <div class="p-4 text-center services-content">
+                            <img src="img/services/interior-fitout.jpg" alt="Interior Fit-Outs" class="service-img mb-4">
+                            <h4 class="mb-3">Interior Fit-Outs</h4>
+                            <p class="mb-4 text-white" ">Custom interior solutions for offices, retail stores, and commercial spaces that reflect your brand identity.</p>
+                            <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joinery Works -->
+                <div class="col-md-6 col-lg-4 service-card">
+                    <div class="services-item bg-servicecard">
+                        <div class="p-4 text-center services-content">
+                            <img src="img/services/joinery-works.jpg" alt="Joinery Works" class="service-img mb-4">
+                            <h4 class="mb-3">Joinery Works</h4>
+                            <p class="mb-4 text-white" ">High-quality woodwork, furniture, and custom joinery solutions for both commercial and residential projects.</p>
+                            <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Set-Up -->
+                <div class="col-md-6 col-lg-4 service-card">
+                    <div class="services-item bg-servicecard">
+                        <div class="p-4 text-center services-content">
+                            <img src="img/services/event-setup.jpg" alt="Event Set-Up" class="service-img mb-4">
+                            <h4 class="mb-3">Event Set-Up</h4>
+                            <p class="mb-4 text-white" ">Complete event setup services including stage design, lighting, sound, and thematic decor for every occasion.</p>
+                            <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition Stands -->
+                <div class="col-md-6 col-lg-4 service-card">
+                    <div class="services-item bg-servicecard">
+                        <div class="p-4 text-center services-content">
+                            <img src="img/services/exhibition-stands.jpg" alt="Exhibition Stands" class="service-img mb-4">
+                            <h4 class="mb-3">Exhibition Stands</h4>
+                            <p class="mb-4 text-white" ">Design and installation of innovative exhibition stands to make your brand stand out at trade shows.</p>
+                            <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kiosk & Retail Solutions -->
+                <div class="col-md-6 col-lg-4 service-card">
+                    <div class="services-item bg-servicecard">
+                        <div class="p-4 text-center services-content">
+                            <img src="img/services/kiosk.jpg" alt="Kiosk Design" class="service-img mb-4">
+                            <h4 class="mb-3">Kiosk & Retail Solutions</h4>
+                            <p class="mb-4 text-white" ">Custom-designed kiosks and retail spaces to create a unique shopping experience for your customers.</p>
+                            <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Printing -->
+                <div class="col-md-6 col-lg-4 service-card">
+                    <div class="services-item bg-servicecard">
+                        <div class="p-4 text-center services-content">
+                            <img src="img/services/digital-printing.jpg" alt="Digital Printing" class="service-img mb-4">
+                            <h4 class="mb-3">Digital Printing</h4>
+                            <p class="mb-4 text-white" ">High-quality digital printing services for banners, signage, flyers, and marketing materials.</p>
+                            <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+    <!-- Project Start -->
+    <div class="container-fluid project py-5 mb-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Our Project</h5>
+                <h1>Our Recently Completed Projects</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-1.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-2.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-3.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-4.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-5.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-6.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-7.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-8.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-9.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <!-- Add class clickable-img -->
+                            <img src="img/project-10.jpg" class="img-fluid w-100 rounded clickable-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+    <!-- Testimonial Start -->
+    <section class="container-fluid testimonial">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Our Testimonial</h5>
+                <h1>What Our Clients Say!</h1>
+            </div>
+
+            <!-- Owl Carousel -->
+            <div class="owl-carousel testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-1.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">Arif Ibrahim</h4>
+                            <p class="m-0 pb-1">Red Events</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>We have joined hands with Woodland Group since its establishment in 2008. To date, our partnership celebrated its 12th anniversary...</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-2.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">Christina</h4>
+                            <p class="m-0 pb-1">Head of Events Department, OP3 Global</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>We have developed a great partnership over the years with Woodland Group and their dedication towards our projects is evident...</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-3.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">Michael Panagiotakis</h4>
+                            <p class="m-0 pb-1">Head of Events, Viola Communications Abu Dhabi</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>I just wanted to say a big thank you to Woodland Group all the team for all the working together since 2013. You guys keep delivering great jobs since we shake hands in 2013. The feedback has been tremendous with lots of comments of "best yet". So, once again, many thanks.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-4.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">Ramzi Essayed</h4>
+                            <p class="m-0 pb-1">Managing Director, OPlus Events & Exhibitions</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>Woodland Group allows us to focus on our clients instead of being tangled into Production and Execution work.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-5.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">Dennis Lopez</h4>
+                            <p class="m-0 pb-1">Director, Bluamoeba</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>I have been impressed with your dedication and commitment. I would like to go so far to say you set a benchmark in production support that other companies could learn a lot from.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-2.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">NASSER ALI MULLA</h4>
+                            <p class="m-0 pb-1">Chairman, Zone Group Media Abu Dhabi</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>The Zone Group Media enjoys working with Woodland Group, their professional approach coupled with a great understanding of the Execution and creativity required for events production has helped contribute to an excellent working relationship since 2013. <br /></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7 -->
+                <div class="testimonial-item border p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div><img src="img/testimonial-7.jpg" alt=""></div>
+                        <div class="ms-4">
+                            <h4 class="text-secondary">Neville Lobo</h4>
+                            <p class="m-0 pb-1">Director of Operations, SLS Production</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text border-top pt-3">
+                        <p>We have been working with Woodland Group for a few years now and can always trust them to deliver the best quality with quick turnaround times and great pricing.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Testimonial End -->
+    <!-- Contact Start -->
+    <div class="container-fluid py-5 mb-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Get In Touch</h5>
+                <h1 class="mb-3">Contact for any query</h1>
+                <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+            </div>
+            <div class="contact-detail position-relative p-5">
+                <div class="row g-5 mb-5 justify-content-center">
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Address</h4>
+                                <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 rank Str, NY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                <i class="fa fa-phone text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Call Us</h4>
+                                <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                <i class="fa fa-envelope text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Email Us</h4>
+                                <a class="h5" href="mailto:info@example.com" target="_blank">info@example.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                        <div class="p-5 h-100 rounded contact-map">
+                            <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                        <div class="p-5 rounded contact-form">
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Project">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-start">
+                                <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <section class="clients-section py-5">
+
+        <div class="container">
+            <h5 class="text-primary text-center mb-4">OUR CLIENTS</h5>
+            <div class="clients-slider">
+                <div class="clients-track" id="clientsTrack">
+                    <!-- 24 Client Logos -->
+                    <div class="client-item"><img src="img/clients/1.png" alt="Client 1"></div>
+                    <div class="client-item"><img src="img/clients/2.png" alt="Client 2"></div>
+                    <div class="client-item"><img src="img/clients/3.png" alt="Client 3"></div>
+                    <div class="client-item"><img src="img/clients/4.png" alt="Client 4"></div>
+                    <div class="client-item"><img src="img/clients/5.png" alt="Client 5"></div>
+                    <div class="client-item"><img src="img/clients/6.png" alt="Client 6"></div>
+                    <div class="client-item"><img src="img/clients/7.png" alt="Client 7"></div>
+                    <div class="client-item"><img src="img/clients/8.png" alt="Client 8"></div>
+                    <div class="client-item"><img src="img/clients/9.png" alt="Client 9"></div>
+                    <div class="client-item"><img src="img/clients/10.png" alt="Client 10"></div>
+                    <div class="client-item"><img src="img/clients/11.png" alt="Client 11"></div>
+                    <div class="client-item"><img src="img/clients/12.png" alt="Client 12"></div>
+                    <div class="client-item"><img src="img/clients/13.png" alt="Client 13"></div>
+                    <div class="client-item"><img src="img/clients/14.png" alt="Client 14"></div>
+                    <div class="client-item"><img src="img/clients/15.png" alt="Client 15"></div>
+                    <div class="client-item"><img src="img/clients/16.jpg" alt="Client 16"></div>
+                    <div class="client-item"><img src="img/clients/17.png" alt="Client 17"></div>
+                    <div class="client-item"><img src="img/clients/18.png" alt="Client 18"></div>
+                    <div class="client-item"><img src="img/clients/19.png" alt="Client 19"></div>
+                    <div class="client-item"><img src="img/clients/20.png" alt="Client 20"></div>
+                    <div class="client-item"><img src="img/clients/21.png" alt="Client 21"></div>
+                    <div class="client-item"><img src="img/clients/22.png" alt="Client 22"></div>
+                    <div class="client-item"><img src="img/clients/23.png" alt="Client 23"></div>
+                    <div class="client-item"><img src="img/clients/24.png" alt="Client 24"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h2 class="text-woodprimary fw-bold d-block">WOODLAND <span class="text-secondary">GROUP</span> </h2>
+                    </a>
+                    <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
+                    <div class="d-flex hightech-link">
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Short Link</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Help Link</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 123 Street, New York, USA</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +123 456 7890</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@exmple.con</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Woodland Group</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <span class="text-light">Designed By <a href="https://bluelinestechsolutions.com/">Bluelines Tech Solutions</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Fullscreen Modal -->
+    <div id="imgModal" class="img-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImg">
+    </div>
+    <div id="pointer-ring" class="d-none" style="border-color: rgb(196, 196, 196); padding: 15px; transform: translate(823px, 346px);"></div>
+    <div id="pointer-dot" class="d-none" style="color:white;border-color: white; transform: translate(332px, 344px);"></div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+    <!-- Social Media Icons -->
+    <div class="sidesocial">
+        <ul>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a onclick="sendWhatsappMessage()" href="https://wa.me/+971504408582?text=Hi, I want to contact WoodLand Group" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js" type="text/javascript"></script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/pointer.js"></script>
+    <!--<script>
+        init_pointer({
+            pointerColor: "#FF671F", // Css color
+            ringSize: 15, // Pixels
+            ringClickSize: 10 // Pixels when clicking
+        })
+    </script>-->
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Get modal elements
+        var modal = document.getElementById("imgModal");
+        var modalImg = document.getElementById("fullImg");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Attach click event to all images with class clickable-img
+        document.querySelectorAll(".clickable-img").forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        // Close modal when clicking X
+        span.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside image
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+
+        // ✅ Close modal when pressing ESC key
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.getElementById('clientsTrack');
+
+            // Duplicate logos for seamless scroll
+            track.innerHTML += track.innerHTML;
+
+            const trackWidth = track.scrollWidth / 2;
+
+            // Horizontal scroll
+            gsap.to(track, {
+                x: `-${trackWidth}px`,
+                duration: 50,   // adjust scroll speed
+                ease: "linear",
+                repeat: -1
+            });
+
+            // Floating & 3D tilt animation for each logo
+            const items = document.querySelectorAll('.client-item');
+            items.forEach(item => {
+                gsap.to(item, {
+                    y: "-=10",
+                    rotationY: "+=5",
+                    rotationX: "+=3",
+                    duration: 1 + Math.random(),
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "sine.inOut"
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize Owl Carousel
+            $('.testimonial-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    992: { items: 3 }
+                }
+            });
+
+            // Animate testimonial items on load
+            gsap.from(".testimonial-item", {
+                y: 50,
+                /* opacity: 0,*/
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+
+            // Optional floating effect
+            $('.testimonial-item').each(function () {
+                gsap.to(this, {
+                    y: '+=5',
+                    duration: 2 + Math.random(),
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "sine.inOut"
+                });
+            });
+        });
+    </script>
+
+    <!-- GSAP Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script>
+        // Animate Services on Scroll
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".service-card", {
+            scrollTrigger: {
+                trigger: ".services-inner",
+                start: "top 80%",
+            },
+            y: 50,
+            opacity: 0,
+            scale: 0.95,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+        // Optional: Hover floating effect
+        document.querySelectorAll('.services-item').forEach(item => {
+            gsap.to(item, {
+                y: 5,
+                repeat: -1,
+                yoyo: true,
+                duration: 2 + Math.random(),
+                ease: "sine.inOut",
+                paused: true,
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                    toggleActions: "play pause resume pause"
+                }
+            });
+
+            item.addEventListener('mouseenter', () => gsap.to(item, { scale: 1.05, duration: 0.3 }));
+            item.addEventListener('mouseleave', () => gsap.to(item, { scale: 1, duration: 0.3 }));
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            const regionSelector = $('#region-selector-overlay');
+            const cookieName = 'user_region';
+
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax"; // Added SameSite=Lax
+            }
+
+            // Function to get a cookie
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            // Check if the region cookie exists
+            const chosenRegion = getCookie(cookieName);
+
+            if (chosenRegion) {
+                // If cookie exists, hide the selector immediately
+                regionSelector.hide();
+                // Optional: Redirect based on cookie if you have different domains/paths
+                // console.log("Region already selected:", chosenRegion);
+                // If your sites are on different URLs (e.g., dubai.domain.com),
+                // you might not need redirection here, as the cookie targets the specific domain.
+                // If they are paths (e.g., domain.com/dubai), you might redirect:
+                // var currentPathRegion = window.location.pathname.split('/')[1];
+                // if (currentPathRegion !== chosenRegion && chosenRegion === 'london') {
+                //     window.location.href = '/london/'; // Or the full URL
+                // } // Add similar checks for dubai, mumbai
+            } else {
+                // If no cookie, show the selector
+                regionSelector.show();
+            }
+
+            // Handle clicks on region cards
+            $('.region-card').on('click', function (e) {
+                // Don't prevent default navigation, we want the link to work
+                // e.preventDefault(); // Remove this line if you want the link to navigate immediately
+
+                const selectedRegion = $(this).data('region');
+                const targetUrl = $(this).attr('href');
+
+                // Set the cookie for 30 days
+                setCookie(cookieName, selectedRegion, 30);
+                console.log("Region selected and cookie set:", selectedRegion);
+
+                // Hide the selector visually (optional, as navigation will happen)
+                regionSelector.fadeOut();
+
+                // Optional: If you *don't* want immediate navigation via href,
+                // uncomment the e.preventDefault() above and uncomment the line below
+                // window.location.href = targetUrl;
+            });
+
+
+        }); // End of document ready
+    </script>
+</body>
+
+</html>
