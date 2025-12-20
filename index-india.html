@@ -179,7 +179,8 @@
             color: #fff;
         }
 
-            .stats-india .counter-value {
+            /* NOTE: .count-digit class used instead of counter-value to avoid conflict with main.js */
+            .stats-india .count-digit {
                 color: var(--india-primary);
                 font-weight: 800;
             }
@@ -345,7 +346,7 @@
                         <div class="dropdown-menu shadow-sm rounded-3 border-0 mt-2">
                             <a href="index.html" class="dropdown-item region-select-link" data-region="dubai">🇦🇪 Dubai</a>
                             <a href="index-london.html" class="dropdown-item region-select-link" data-region="london">🇬🇧 London</a>
-                            <a href="index-india.html" class="dropdown-item region-select-link active" data-region="india">🇮🇳 India</a>
+                            <a href="index-india.html" class="dropdown-item region-select-link active" data-region="india">🇮🇳 Mumbai</a>
                         </div>
                     </div>
                 </div>
@@ -421,23 +422,18 @@
 
             <div class="row g-4 services-inner">
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card-india service-item" style="opacity:1!important">
-                        <div class="card-img-wrap">
-                            <img src="img/services/interior-fitout.jpg" alt="Office Interiors Mumbai">
-                        </div>
+                    <div class="service-card-india service-item">
+                        <div class="card-img-wrap"><img src="img/services/interior-fitout.jpg" alt="Office Interiors Mumbai"></div>
                         <div class="service-content-india">
                             <h4>Corporate Interiors</h4>
-                            <p class="text-muted">High-performance office fit-outs for MNCs and startups in Mumbai, Delhi, and Bangalore. We create spaces that inspire.</p>
+                            <p class="text-muted">High-performance office fit-outs for MNCs and startups in Mumbai, Delhi, and Bangalore.</p>
                             <a href="service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card-india service-item" style="opacity:1!important">
-                        <div class="card-img-wrap">
-                            <img src="img/services/event-setup.jpg" alt="Wedding Decor India">
-                        </div>
+                    <div class="service-card-india service-item">
+                        <div class="card-img-wrap"><img src="img/services/event-setup.jpg" alt="Wedding Decor India"></div>
                         <div class="service-content-india">
                             <h4>Weddings & Events</h4>
                             <p class="text-muted">Grand stage setups, floral decor, and thematic production for India's "Big Fat Weddings" and corporate galas.</p>
@@ -445,15 +441,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card-india service-item" style="opacity:1!important">
-                        <div class="card-img-wrap">
-                            <img src="img/services/exhibition-stands1.jpg" alt="Exhibition Stalls">
-                        </div>
+                    <div class="service-card-india service-item">
+                        <div class="card-img-wrap"><img src="img/services/exhibition-stands1.jpg" alt="Exhibition Stalls"></div>
                         <div class="service-content-india">
                             <h4>Exhibition Stalls</h4>
-                            <p class="text-muted">Award-winning stall designs for Pragati Maidan, BEC Goregaon, and Jio World Centre. Stand out from the crowd.</p>
+                            <p class="text-muted">Award-winning stall designs for Pragati Maidan, BEC Goregaon, and Jio World Centre.</p>
                             <a href="service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -462,23 +455,26 @@
         </div>
     </div>
 
-    <div class="container-fluid stats-india py-5">
+    <div class="container-fluid stats-india py-5" id="stats-section">
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 counter-value mb-0">200</h1>
+                    <h1 class="display-4 count-digit mb-0" data-count="200">0</h1>
                     <span class="fs-6 text-uppercase" style="letter-spacing: 1px;">Cities Covered</span>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 counter-value mb-0">500</h1>
+                    <h1 class="display-4 count-digit mb-0" data-count="500">0</h1>
                     <span class="fs-6 text-uppercase" style="letter-spacing: 1px;">Weddings Designed</span>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 counter-value mb-0">1M+</h1>
+                    <div class="d-flex justify-content-center">
+                        <h1 class="display-4 count-digit mb-0" data-count="1000000">0</h1>
+                        <h1 class="display-4 mb-0">+</h1>
+                    </div>
                     <span class="fs-6 text-uppercase" style="letter-spacing: 1px;">Sq. Ft. Fitted Out</span>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 counter-value mb-0">50</h1>
+                    <h1 class="display-4 count-digit mb-0" data-count="50">0</h1>
                     <span class="fs-6 text-uppercase" style="letter-spacing: 1px;">Design Awards</span>
                 </div>
             </div>
@@ -488,97 +484,26 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="d-flex justify-content-between align-items-end mb-5 wow fadeIn" data-wow-delay="0.1s">
-                <div class="section-title-india mb-0 text-start">
-                    <h5>Our Portfolio</h5>
-                    <h1 class="mb-0">Iconic Projects</h1>
-                </div>
+                <div class="section-title-india mb-0 text-start"><h5>Our Portfolio</h5><h1 class="mb-0">Iconic Projects</h1></div>
                 <a href="project.html" class="btn btn-outline-dark rounded-pill d-none d-md-block">View All</a>
             </div>
-
             <div class="row g-4">
-                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-1.jpg" alt="BKC Office">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
-                            <h4 class="text-white mb-1">FinTech HQ</h4>
-                            <span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">BKC, Mumbai</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-2.jpg" alt="Udaipur Wedding">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
-                            <h4 class="text-white mb-1">Royal Wedding Set</h4>
-                            <span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">Udaipur, Rajasthan</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.5s">
-                    <div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-3.jpg" alt="Retail Store">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
-                            <h5 class="text-white mb-0">Fashion Boutique</h5>
-                            <small class="text-white-50">Colaba Causeway</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.7s">
-                    <div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-4.jpg" alt="Tech Expo">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
-                            <h5 class="text-white mb-0">Tech Expo Stand</h5>
-                            <small class="text-white-50">Pragati Maidan, Delhi</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-5.jpg" alt="Restaurant Interior">
-                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
-                            <h5 class="text-white mb-0">Fine Dining</h5>
-                            <small class="text-white-50">Indiranagar, Bangalore</small>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-1.jpg" alt="BKC Office"><div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h4 class="text-white mb-1">FinTech HQ</h4><span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">BKC, Mumbai</span></div></div></div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-2.jpg" alt="Udaipur Wedding"><div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h4 class="text-white mb-1">Royal Wedding Set</h4><span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">Udaipur, Rajasthan</span></div></div></div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.5s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-3.jpg" alt="Retail Store"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Fashion Boutique</h5><small class="text-white-50">Colaba Causeway</small></div></div></div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.7s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-4.jpg" alt="Tech Expo"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Tech Expo Stand</h5><small class="text-white-50">Pragati Maidan, Delhi</small></div></div></div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-5.jpg" alt="Restaurant Interior"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Fine Dining</h5><small class="text-white-50">Indiranagar, Bangalore</small></div></div></div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid py-5" style="background-color: #f2f2f2;">
         <div class="container py-5">
-            <div class="text-center section-title-india mx-auto mb-5" style="max-width: 600px;">
-                <h5>Happy Clients</h5>
-                <h1>Voices of Trust</h1>
-            </div>
+            <div class="text-center section-title-india mx-auto mb-5" style="max-width: 600px;"><h5>Happy Clients</h5><h1>Voices of Trust</h1></div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item-india">
-                    <img src="img/testimonial-1.jpg" alt="Client">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="mb-4 fst-italic text-muted">"Woodland transformed our bare shell office in Gurgaon into a world-class workspace. Their speed of execution is unmatched in India."</p>
-                    <h4 class="fw-bold">Rohan Mehta</h4>
-                    <span class="text-primary small">VP Operations, TechFlow India</span>
-                </div>
-                <div class="testimonial-item-india">
-                    <img src="img/testimonial-2.jpg" alt="Client">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="mb-4 fst-italic text-muted">"For my daughter's wedding, the stage decor was the talk of the town. Vibrant, traditional, yet so modern. Thank you!"</p>
-                    <h4 class="fw-bold">Anjali Desai</h4>
-                    <span class="text-primary small">Event Planner, Mumbai</span>
-                </div>
-                <div class="testimonial-item-india">
-                    <img src="img/testimonial-3.jpg" alt="Client">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="mb-4 fst-italic text-muted">"We trust only Woodland for our exhibition stalls at BEC. They understand brand visibility better than anyone."</p>
-                    <h4 class="fw-bold">Vikram Singh</h4>
-                    <span class="text-primary small">Marketing Head, AutoCorp</span>
-                </div>
+                <div class="testimonial-item-india"><img src="img/testimonial-1.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"Woodland transformed our bare shell office..."</p><h4 class="fw-bold">Rohan Mehta</h4><span class="text-primary small">VP Operations, TechFlow India</span></div>
+                <div class="testimonial-item-india"><img src="img/testimonial-2.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"For my daughter's wedding..."</p><h4 class="fw-bold">Anjali Desai</h4><span class="text-primary small">Event Planner, Mumbai</span></div>
+                <div class="testimonial-item-india"><img src="img/testimonial-3.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"We trust only Woodland for our exhibition..."</p><h4 class="fw-bold">Vikram Singh</h4><span class="text-primary small">Marketing Head, AutoCorp</span></div>
             </div>
         </div>
     </div>
@@ -586,13 +511,8 @@
     <div class="container-fluid py-5" style="background-color: var(--india-primary);">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-8 mb-4 mb-lg-0 text-center text-lg-start">
-                    <h2 class="text-white fw-bold">Planning a Project in India?</h2>
-                    <p class="text-white-50 mb-0 lead">From concept to completion, we are your local partners with global reach.</p>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <a href="contact.html" class="btn btn-saffron py-3 px-5">Get a Quote</a>
-                </div>
+                <div class="col-lg-8 mb-4 mb-lg-0 text-center text-lg-start"><h2 class="text-white fw-bold">Planning a Project in India?</h2><p class="text-white-50 mb-0 lead">From concept to completion, we are your local partners with global reach.</p></div>
+                <div class="col-lg-4 text-center text-lg-end"><a href="contact.html" class="btn btn-saffron py-3 px-5">Get a Quote</a></div>
             </div>
         </div>
     </div>
@@ -640,17 +560,14 @@
                         <span class="text-white-50">&copy; <a href="#" class="text-white">Woodland Group India</a>, All Right Reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <span class="text-white-50">Designed by <a href="#" class="text-white">Bluelines Tech</a></span>
+                        <span class="text-white-50">Designed by <a href="#" class="text-white">Bluelines Tech Solutions</a></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="imgModal" class="img-modal">
-        <span class="close">×</span>
-        <img class="modal-content" id="fullImg">
-    </div>
+    <div id="imgModal" class="img-modal"><span class="close">×</span><img class="modal-content" id="fullImg"></div>
 
     <a href="#" class="btn btn-saffron btn-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -665,50 +582,57 @@
 
     <script>
         // Modal Logic
-        var modal = document.getElementById("imgModal");
-        var modalImg = document.getElementById("fullImg");
-        var span = document.getElementsByClassName("close")[0];
-        document.querySelectorAll(".clickable-img").forEach(img => {
-            img.addEventListener("click", function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-            });
-        });
+        var modal = document.getElementById("imgModal"), modalImg = document.getElementById("fullImg"), span = document.getElementsByClassName("close")[0];
+        document.querySelectorAll(".clickable-img").forEach(img => { img.addEventListener("click", function () { modal.style.display = "block"; modalImg.src = this.src; }); });
         span.addEventListener("click", function () { modal.style.display = "none"; });
         modal.addEventListener("click", function (e) { if (e.target === modal) modal.style.display = "none"; });
         document.addEventListener("keydown", function (e) { if (e.key === "Escape") modal.style.display = "none"; });
+
+        // --- SPECIFIC COUNTER SCRIPT FOR INDIA PAGE ---
+        $(document).ready(function () {
+            var statsSection = document.getElementById('stats-section');
+            var counters = document.querySelectorAll('.count-digit');
+            var hasAnimated = false;
+
+            // Helper to format large numbers
+            function formatNumber(num) {
+                if (num >= 1000000) return (num / 1000000).toFixed(0) + 'M'; // 1M
+                return Math.ceil(num);
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting && !hasAnimated) {
+                    hasAnimated = true;
+                    $('.count-digit').each(function () {
+                        var $this = $(this);
+                        var target = parseInt($this.attr('data-count'));
+                        $this.prop('Counter', 0).animate({
+                            Counter: target
+                        }, {
+                            duration: 2500,
+                            easing: 'swing',
+                            step: function (now) {
+                                $this.text(formatNumber(now));
+                            },
+                            complete: function () {
+                                // Ensure final value is exact
+                                $this.text(formatNumber(target));
+                            }
+                        });
+                    });
+                }
+            }, { threshold: 0.5 });
+
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script>
         gsap.registerPlugin(ScrollTrigger);
-
-        // Animate Service Cards
-        gsap.from(".service-card-india", {
-            scrollTrigger: {
-                trigger: ".services-inner",
-                start: "top 85%",
-            },
-            y: 50,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "power2.out"
-        });
-
-        // Counter Animation
-        $('.counter-value').each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 2500,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
-        });
     </script>
 </body>
 </html>
