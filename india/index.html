@@ -15,17 +15,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <style>
         /* --- INDIA THEME OVERRIDES --- */
         :root {
-            /* Vibrant Modern India Palette */
             --india-primary: #1A237E; /* Deep Royal Indigo */
             --india-accent: #FF9933; /* Saffron Gold */
             --india-accent-hover: #E68900;
@@ -39,23 +37,21 @@
             background-color: var(--india-bg);
         }
 
-        /* Typography */
         h1, h2, h3, h4, h5, .navbar-brand h1 {
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
             letter-spacing: -0.5px;
         }
 
-        /* Hero Text Font */
         .display-1 {
-            font-family: 'Rajdhani', sans-serif; /* High-impact, slightly futuristic */
+            font-family: 'Rajdhani', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
         }
 
         /* Navbar Customization */
         .navbar-container {
-            background-color: #fff !important; /* White clean navbar for India */
+            background-color: #fff !important;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
@@ -68,40 +64,36 @@
             font-weight: 500;
         }
 
-            .navbar-light .navbar-nav .nav-link:hover,
-            .navbar-light .navbar-nav .nav-link.active {
+            .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
                 color: var(--india-accent) !important;
             }
 
         /* Hero Section */
         .hero-india {
-            /* Gradient over image */
-            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(255, 153, 51, 0.2)), url('img/landmarks/mumbai_gateway.jpg') center center no-repeat;
+            /* Note the ../ in the image path */
+            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(255, 153, 51, 0.2)), url('../img/landmarks/mumbai_gateway.jpg') center center no-repeat;
             background-size: cover;
             background-attachment: fixed;
             min-height: 90vh;
             display: flex;
             align-items: center;
             position: relative;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Modern angled cut */
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
 
             /* TRICOLOR TEXT EFFECT */
             .hero-india h1 {
-                /* Linear Gradient: Saffron (Top) -> White (Middle) -> Green (Bottom) */
                 background: linear-gradient(180deg, #FF9933 20%, #FFFFFF 50%, #138808 80%);
-                /* Clip background to text */
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 color: transparent;
-                /* Drop shadow used instead of text-shadow for better visibility with transparent text */
                 filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.6));
             }
 
-        /* Buttons */
+        /* UI Elements */
         .btn {
-            border-radius: 50px !important; /* Rounded pills for friendly vibe */
+            border-radius: 50px !important;
             font-weight: 600;
             padding: 12px 35px;
             transition: all 0.3s ease;
@@ -130,7 +122,6 @@
                 color: var(--india-primary);
             }
 
-        /* Service Cards */
         .service-card-india {
             background: #fff;
             border-radius: 15px;
@@ -172,20 +163,17 @@
                 margin-bottom: 0.5rem;
             }
 
-        /* Stats Section */
         .stats-india {
             background-color: var(--india-accent);
             background-image: linear-gradient(135deg, var(--india-accent) 0%, #FFB74D 100%);
             color: #fff;
         }
 
-            /* NOTE: .count-digit class used instead of counter-value to avoid conflict with main.js */
             .stats-india .count-digit {
                 color: var(--india-primary);
                 font-weight: 800;
             }
 
-        /* Section Titles */
         .section-title-india {
             position: relative;
             display: inline-block;
@@ -216,7 +204,6 @@
                 border-radius: 2px;
             }
 
-        /* Testimonials */
         .testimonial-item-india {
             background: #fff;
             padding: 30px;
@@ -240,11 +227,10 @@
             }
 
             .testimonial-item-india .stars {
-                color: #FFD700; /* Gold for stars */
+                color: #FFD700;
                 margin-bottom: 15px;
             }
 
-        /* Footer */
         .footer-india {
             background-color: var(--india-primary);
             color: #fff;
@@ -261,12 +247,10 @@
                     color: #fff;
                 }
 
-        /* Scrollbar */
         ::-webkit-scrollbar-thumb {
             background: var(--india-primary);
         }
 
-        /* Region Select Override */
         #region-selector-overlay {
             background: linear-gradient(135deg, rgba(26, 35, 126, 0.95), rgba(255, 153, 51, 0.9)) !important;
         }
@@ -280,25 +264,25 @@
             <h2 class="mb-4 text-white">Select Your Region</h2>
             <div class="row justify-content-center g-4">
                 <div class="col-md-4 col-lg-3">
-                    <a href="index.html" class="region-card text-decoration-none" data-region="dubai">
+                    <a href="../index.html" class="region-card text-decoration-none" data-region="dubai">
                         <div class="card region-card-inner">
-                            <img src="img/landmarks/dubai_skyline.jpg" class="card-img-top region-card-img" alt="Dubai">
+                            <img src="../img/landmarks/dubai_skyline.jpg" class="card-img-top region-card-img" alt="Dubai">
                             <div class="card-body"><h5 class="card-title">Dubai – UAE</h5></div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-3">
-                    <a href="index-london.html" class="region-card text-decoration-none" data-region="london">
+                    <a href="../uk/" class="region-card text-decoration-none" data-region="london">
                         <div class="card region-card-inner">
-                            <img src="img/landmarks/london_tower_bridge.jpg" class="card-img-top region-card-img" alt="London">
+                            <img src="../img/landmarks/london_tower_bridge.jpg" class="card-img-top region-card-img" alt="London">
                             <div class="card-body"><h5 class="card-title">London – UK</h5></div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-lg-3">
-                    <a href="index-india.html" class="region-card text-decoration-none" data-region="india">
+                    <a href="#" class="region-card text-decoration-none" data-region="india">
                         <div class="card region-card-inner" style="border-color: var(--india-accent); transform: scale(1.05);">
-                            <img src="img/landmarks/mumbai_gateway.jpg" class="card-img-top region-card-img" alt="Mumbai">
+                            <img src="../img/landmarks/mumbai_gateway.jpg" class="card-img-top region-card-img" alt="Mumbai">
                             <div class="card-body"><h5 class="card-title" style="color: var(--india-accent);">India</h5></div>
                         </div>
                     </a>
@@ -314,7 +298,7 @@
     <div class="container-fluid navbar-container sticky-top">
         <div class="container">
             <nav class="navbar navbar-light navbar-expand-lg py-3">
-                <a href="index-india.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <div class="d-flex align-items-center">
                         <h2 class="m-0 fw-bold" style="font-size: 26px;">WOODLAND <span style="color: var(--india-accent);">INDIA</span></h2>
                     </div>
@@ -326,11 +310,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="index-india.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">Our Story</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="../about.html" class="nav-item nav-link">Our Story</a>
+                        <a href="../service.html" class="nav-item nav-link">Services</a>
+                        <a href="../project.html" class="nav-item nav-link">Projects</a>
+                        <a href="../contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
 
@@ -344,9 +328,9 @@
                             <i class="fas fa-globe me-1"></i> India
                         </a>
                         <div class="dropdown-menu shadow-sm rounded-3 border-0 mt-2">
-                            <a href="index.html" class="dropdown-item region-select-link" data-region="dubai">🇦🇪 Dubai</a>
-                            <a href="index-london.html" class="dropdown-item region-select-link" data-region="london">🇬🇧 London</a>
-                            <a href="index-india.html" class="dropdown-item region-select-link active" data-region="india">🇮🇳 Mumbai</a>
+                            <a href="../index.html" class="dropdown-item region-select-link" data-region="dubai">🇦🇪 Dubai</a>
+                            <a href="../uk/" class="dropdown-item region-select-link" data-region="london">🇬🇧 London</a>
+                            <a href="#" class="dropdown-item region-select-link active" data-region="india">🇮🇳 India</a>
                         </div>
                     </div>
                 </div>
@@ -364,8 +348,8 @@
                         From grand weddings in Udaipur to corporate hubs in BKC. Woodland Group brings global fit-out expertise blended with the vibrant soul of India.
                     </p>
                     <div class="animated slideInUp">
-                        <a href="project.html" class="btn btn-saffron me-3">View Our Work</a>
-                        <a href="contact.html" class="btn btn-indigo-outline">Talk to Us</a>
+                        <a href="../project.html" class="btn btn-saffron me-3">View Our Work</a>
+                        <a href="../contact.html" class="btn btn-indigo-outline">Talk to Us</a>
                     </div>
                 </div>
             </div>
@@ -378,10 +362,10 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="row g-3">
                         <div class="col-6 text-end">
-                            <img class="img-fluid rounded-3 shadow-sm w-100" src="img/about-1.png" style="margin-top: 25%;" alt="Mumbai Office">
+                            <img class="img-fluid rounded-3 shadow-sm w-100" src="../img/about-1.png" style="margin-top: 25%;" alt="Mumbai Office">
                         </div>
                         <div class="col-6 text-start">
-                            <img class="img-fluid rounded-3 shadow-sm w-100" src="img/about-2.png" alt="Indian Decor">
+                            <img class="img-fluid rounded-3 shadow-sm w-100" src="../img/about-2.png" alt="Indian Decor">
                         </div>
                     </div>
                 </div>
@@ -407,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="btn btn-outline-dark rounded-pill px-5">Read Our Story</a>
+                    <a href="../about.html" class="btn btn-outline-dark rounded-pill px-5">Read Our Story</a>
                 </div>
             </div>
         </div>
@@ -423,31 +407,31 @@
             <div class="row g-4 services-inner">
                 <div class="col-md-6 col-lg-4">
                     <div class="service-card-india service-item">
-                        <div class="card-img-wrap"><img src="img/services/interior-fitout.jpg" alt="Office Interiors Mumbai"></div>
+                        <div class="card-img-wrap"><img src="../img/services/interior-fitout.jpg" alt="Office Interiors Mumbai"></div>
                         <div class="service-content-india">
                             <h4>Corporate Interiors</h4>
                             <p class="text-muted">High-performance office fit-outs for MNCs and startups in Mumbai, Delhi, and Bangalore.</p>
-                            <a href="service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
+                            <a href="../service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="service-card-india service-item">
-                        <div class="card-img-wrap"><img src="img/services/event-setup.jpg" alt="Wedding Decor India"></div>
+                        <div class="card-img-wrap"><img src="../img/services/event-setup.jpg" alt="Wedding Decor India"></div>
                         <div class="service-content-india">
                             <h4>Weddings & Events</h4>
                             <p class="text-muted">Grand stage setups, floral decor, and thematic production for India's "Big Fat Weddings" and corporate galas.</p>
-                            <a href="service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
+                            <a href="../service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="service-card-india service-item">
-                        <div class="card-img-wrap"><img src="img/services/exhibition-stands1.jpg" alt="Exhibition Stalls"></div>
+                        <div class="card-img-wrap"><img src="../img/services/exhibition-stands.jpg" alt="Exhibition Stalls"></div>
                         <div class="service-content-india">
                             <h4>Exhibition Stalls</h4>
                             <p class="text-muted">Award-winning stall designs for Pragati Maidan, BEC Goregaon, and Jio World Centre.</p>
-                            <a href="service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
+                            <a href="../service.html" class="text-decoration-none fw-bold" style="color: var(--india-accent);">Explore <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -485,14 +469,14 @@
         <div class="container py-5">
             <div class="d-flex justify-content-between align-items-end mb-5 wow fadeIn" data-wow-delay="0.1s">
                 <div class="section-title-india mb-0 text-start"><h5>Our Portfolio</h5><h1 class="mb-0">Iconic Projects</h1></div>
-                <a href="project.html" class="btn btn-outline-dark rounded-pill d-none d-md-block">View All</a>
+                <a href="../project.html" class="btn btn-outline-dark rounded-pill d-none d-md-block">View All</a>
             </div>
             <div class="row g-4">
-                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-1.jpg" alt="BKC Office"><div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h4 class="text-white mb-1">FinTech HQ</h4><span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">BKC, Mumbai</span></div></div></div>
-                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-2.jpg" alt="Udaipur Wedding"><div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h4 class="text-white mb-1">Royal Wedding Set</h4><span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">Udaipur, Rajasthan</span></div></div></div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.5s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-3.jpg" alt="Retail Store"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Fashion Boutique</h5><small class="text-white-50">Colaba Causeway</small></div></div></div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.7s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-4.jpg" alt="Tech Expo"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Tech Expo Stand</h5><small class="text-white-50">Pragati Maidan, Delhi</small></div></div></div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="img/project-5.jpg" alt="Restaurant Interior"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Fine Dining</h5><small class="text-white-50">Indiranagar, Bangalore</small></div></div></div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="../img/project-1.jpg" alt="BKC Office"><div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h4 class="text-white mb-1">FinTech HQ</h4><span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">BKC, Mumbai</span></div></div></div>
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.3s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 400px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="../img/project-2.jpg" alt="Udaipur Wedding"><div class="position-absolute bottom-0 start-0 w-100 p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h4 class="text-white mb-1">Royal Wedding Set</h4><span class="text-warning text-uppercase fw-bold" style="font-size: 12px;">Udaipur, Rajasthan</span></div></div></div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.5s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="../img/project-3.jpg" alt="Retail Store"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Fashion Boutique</h5><small class="text-white-50">Colaba Causeway</small></div></div></div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.7s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="../img/project-4.jpg" alt="Tech Expo"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Tech Expo Stand</h5><small class="text-white-50">Pragati Maidan, Delhi</small></div></div></div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s"><div class="position-relative overflow-hidden rounded-3 project-item" style="height: 300px;"><img class="img-fluid w-100 h-100 object-fit-cover clickable-img" src="../img/project-5.jpg" alt="Restaurant Interior"><div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);"><h5 class="text-white mb-0">Fine Dining</h5><small class="text-white-50">Indiranagar, Bangalore</small></div></div></div>
             </div>
         </div>
     </div>
@@ -501,9 +485,9 @@
         <div class="container py-5">
             <div class="text-center section-title-india mx-auto mb-5" style="max-width: 600px;"><h5>Happy Clients</h5><h1>Voices of Trust</h1></div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item-india"><img src="img/testimonial-1.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"Woodland transformed our bare shell office..."</p><h4 class="fw-bold">Rohan Mehta</h4><span class="text-primary small">VP Operations, TechFlow India</span></div>
-                <div class="testimonial-item-india"><img src="img/testimonial-2.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"For my daughter's wedding..."</p><h4 class="fw-bold">Anjali Desai</h4><span class="text-primary small">Event Planner, Mumbai</span></div>
-                <div class="testimonial-item-india"><img src="img/testimonial-3.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"We trust only Woodland for our exhibition..."</p><h4 class="fw-bold">Vikram Singh</h4><span class="text-primary small">Marketing Head, AutoCorp</span></div>
+                <div class="testimonial-item-india"><img src="../img/testimonial-1.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"Woodland transformed our bare shell office..."</p><h4 class="fw-bold">Rohan Mehta</h4><span class="text-primary small">VP Operations, TechFlow India</span></div>
+                <div class="testimonial-item-india"><img src="../img/testimonial-2.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"For my daughter's wedding..."</p><h4 class="fw-bold">Anjali Desai</h4><span class="text-primary small">Event Planner, Mumbai</span></div>
+                <div class="testimonial-item-india"><img src="../img/testimonial-3.jpg" alt="Client"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="mb-4 fst-italic text-muted">"We trust only Woodland for our exhibition..."</p><h4 class="fw-bold">Vikram Singh</h4><span class="text-primary small">Marketing Head, AutoCorp</span></div>
             </div>
         </div>
     </div>
@@ -512,7 +496,7 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-8 mb-4 mb-lg-0 text-center text-lg-start"><h2 class="text-white fw-bold">Planning a Project in India?</h2><p class="text-white-50 mb-0 lead">From concept to completion, we are your local partners with global reach.</p></div>
-                <div class="col-lg-4 text-center text-lg-end"><a href="contact.html" class="btn btn-saffron py-3 px-5">Get a Quote</a></div>
+                <div class="col-lg-4 text-center text-lg-end"><a href="../contact.html" class="btn btn-saffron py-3 px-5">Get a Quote</a></div>
             </div>
         </div>
     </div>
@@ -520,51 +504,13 @@
     <div class="container-fluid footer-india text-light wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="text-white mb-4">WOODLAND <span style="color: var(--india-accent);">INDIA</span></h3>
-                    <p class="text-white-50">Delivering excellence in interiors, joinery, and events since 2008. Your vision, our craftsmanship.</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-social rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-social rounded-circle me-2" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-social rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-white-50 mb-2 text-decoration-none" href="about.html"><i class="bi bi-chevron-right me-2"></i>Our Story</a>
-                        <a class="text-white-50 mb-2 text-decoration-none" href="service.html"><i class="bi bi-chevron-right me-2"></i>Services</a>
-                        <a class="text-white-50 mb-2 text-decoration-none" href="project.html"><i class="bi bi-chevron-right me-2"></i>Projects</a>
-                        <a class="text-white-50 mb-2 text-decoration-none" href="contact.html"><i class="bi bi-chevron-right me-2"></i>Contact</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">India HQ</h5>
-                    <p class="mb-2 text-white-50"><i class="fa fa-map-marker-alt me-3" style="color: var(--india-accent);"></i>101, Business Bay, Lower Parel, Mumbai</p>
-                    <p class="mb-2 text-white-50"><i class="fa fa-phone-alt me-3" style="color: var(--india-accent);"></i>+91 98200 12345</p>
-                    <p class="mb-2 text-white-50"><i class="fa fa-envelope me-3" style="color: var(--india-accent);"></i>india@woodlandgroup.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Newsletter</h5>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5 rounded-pill" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-saffron position-absolute top-0 end-0 mt-1 me-1 rounded-pill p-2 px-3">SignUp</button>
-                    </div>
-                </div>
+                <div class="col-lg-4 col-md-6"><h3 class="text-white mb-4">WOODLAND <span style="color: var(--india-accent);">INDIA</span></h3><p class="text-white-50">Delivering excellence in interiors, joinery, and events since 2008. Your vision, our craftsmanship.</p><div class="d-flex pt-2"><a class="btn btn-square btn-social rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a><a class="btn btn-square btn-social rounded-circle me-2" href="#"><i class="fab fa-instagram"></i></a><a class="btn btn-square btn-social rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+                <div class="col-lg-2 col-md-6"><h5 class="text-white mb-4">Quick Links</h5><div class="d-flex flex-column justify-content-start"><a class="text-white-50 mb-2 text-decoration-none" href="../about.html"><i class="bi bi-chevron-right me-2"></i>Our Story</a><a class="text-white-50 mb-2 text-decoration-none" href="../service.html"><i class="bi bi-chevron-right me-2"></i>Services</a><a class="text-white-50 mb-2 text-decoration-none" href="../project.html"><i class="bi bi-chevron-right me-2"></i>Projects</a><a class="text-white-50 mb-2 text-decoration-none" href="../contact.html"><i class="bi bi-chevron-right me-2"></i>Contact</a></div></div>
+                <div class="col-lg-3 col-md-6"><h5 class="text-white mb-4">India HQ</h5><p class="mb-2 text-white-50"><i class="fa fa-map-marker-alt me-3" style="color: var(--india-accent);"></i>101, Business Bay, Lower Parel, Mumbai</p><p class="mb-2 text-white-50"><i class="fa fa-phone-alt me-3" style="color: var(--india-accent);"></i>+91 98200 12345</p><p class="mb-2 text-white-50"><i class="fa fa-envelope me-3" style="color: var(--india-accent);"></i>india@woodlandgroup.com</p></div>
+                <div class="col-lg-3 col-md-6"><h5 class="text-white mb-4">Newsletter</h5><div class="position-relative mx-auto" style="max-width: 400px;"><input class="form-control border-0 w-100 py-3 ps-4 pe-5 rounded-pill" type="text" placeholder="Your email"><button type="button" class="btn btn-saffron position-absolute top-0 end-0 mt-1 me-1 rounded-pill p-2 px-3">SignUp</button></div></div>
             </div>
         </div>
-        <div class="container">
-            <div class="copyright border-top border-secondary py-4">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-white-50">&copy; <a href="#" class="text-white">Woodland Group India</a>, All Right Reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <span class="text-white-50">Designed by <a href="#" class="text-white">Bluelines Tech Solutions</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="container"><div class="copyright border-top border-secondary py-4"><div class="row"><div class="col-md-6 text-center text-md-start mb-3 mb-md-0"><span class="text-white-50">&copy; <a href="#" class="text-white">Woodland Group India</a>, All Right Reserved.</span></div><div class="col-md-6 text-center text-md-end"><span class="text-white-50">Designed by <a href="#" class="text-white">Bluelines Tech Solutions</a></span></div></div></div></div>
     </div>
 
     <div id="imgModal" class="img-modal"><span class="close">×</span><img class="modal-content" id="fullImg"></div>
@@ -573,12 +519,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 
     <script>
         // Modal Logic
@@ -615,7 +561,6 @@
                                 $this.text(formatNumber(now));
                             },
                             complete: function () {
-                                // Ensure final value is exact
                                 $this.text(formatNumber(target));
                             }
                         });
@@ -633,6 +578,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script>
         gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".service-card-india", {
+            scrollTrigger: { trigger: ".services-inner", start: "top 85%" },
+            y: 50, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
+        });
     </script>
 </body>
 </html>
