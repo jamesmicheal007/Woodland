@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <title>Our Expertise - Woodland Group UK</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --london-primary: #0F1F3D;
+            --london-accent: #C5A065;
+            --london-light: #F4F4F4;
+        }
+
+        body { font-family: 'Inter', sans-serif; color: #333; }
+        h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--london-primary); }
+        
+        .navbar-container { background-color: var(--london-primary) !important; border-bottom: 1px solid var(--london-accent); }
+        .page-header { background: linear-gradient(rgba(15, 31, 61, 0.85), rgba(15, 31, 61, 0.85)), url('../img/services/joinery-works.jpg') center center no-repeat; background-size: cover; }
+        
+        .service-card { border: 1px solid #eee; transition: all 0.4s ease; background: #fff; }
+        .service-card:hover { border-color: var(--london-accent); transform: translateY(-5px); }
+        .service-card h4 { font-size: 1.25rem; margin-top: 1rem; }
+        .btn-link { color: var(--london-primary); font-weight: 600; text-decoration: none; }
+        .btn-link:hover { color: var(--london-accent); }
+
+        .footer { background-color: #0a1426 !important; border-top: 4px solid var(--london-accent); }
+    </style>
+</head>
+
+<body>
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" style="background: #fff; z-index: 9999;">
+        <div class="spinner-grow" role="status" style="color: var(--london-accent);"></div>
+    </div>
+
+    <div class="container-fluid navbar-container sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-3">
+                <a href="index.html" class="navbar-brand">
+                    <div class="d-flex align-items-center">
+                        <h2 class="text-white m-0" style="font-size: 24px; letter-spacing: 1px;">WOODLAND <span style="color: var(--london-accent); font-weight: 400;">GROUP UK</span></h2>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">Heritage</a>
+                        <a href="services.html" class="nav-item nav-link active">Expertise</a>
+                        <a href="projects.html" class="nav-item nav-link">Portfolio</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shrink-0 align-items-center ps-4">
+                    <div class="d-flex flex-column text-end me-3">
+                        <span style="color: rgba(255,255,255,0.6); font-size: 12px;">London HQ</span>
+                        <span style="color: #fff; font-family: 'Inter'; font-weight: 500;">+44 1924 975787</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid page-header py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Our Expertise</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid services py-5 mb-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-uppercase" style="color: var(--london-accent); letter-spacing: 2px;">What We Offer</h5>
+                <h1>Bespoke Solutions for Modern Business</h1>
+            </div>
+            <div class="row g-5 services-inner">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="service-card p-4 h-100">
+                        <div class="overflow-hidden mb-4" style="height: 200px;">
+                            <img src="../img/services/interior-fitout.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Fit Out">
+                        </div>
+                        <h4 class="mb-3">CAT A & B Fit-Outs</h4>
+                        <p class="mb-4 text-muted">Comprehensive office fit-out services for London's commercial sector. From shell and core to final finishing touches.</p>
+                        <a href="#" class="btn-link text-uppercase">Discover More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="service-card p-4 h-100">
+                        <div class="overflow-hidden mb-4" style="height: 200px;">
+                            <img src="../img/services/joinery-works.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Joinery">
+                        </div>
+                        <h4 class="mb-3">Bespoke Joinery</h4>
+                        <p class="mb-4 text-muted">Handcrafted in our UK workshop. We create custom reception desks, wall panelling, and cabinetry for luxury spaces.</p>
+                        <a href="#" class="btn-link text-uppercase">Discover More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="service-card p-4 h-100">
+                        <div class="overflow-hidden mb-4" style="height: 200px;">
+                            <img src="../img/services/exhibition-stands.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Events">
+                        </div>
+                        <h4 class="mb-3">Experiential Events</h4>
+                        <p class="mb-4 text-muted">Design and build of immersive structures for London Fashion Week, product launches, and corporate galas.</p>
+                        <a href="#" class="btn-link text-uppercase">Discover More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="service-card p-4 h-100">
+                        <div class="overflow-hidden mb-4" style="height: 200px;">
+                            <img src="../img/services/kiosk.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Retail">
+                        </div>
+                        <h4 class="mb-3">Luxury Retail</h4>
+                        <p class="mb-4 text-muted">High-end shopfitting for boutique brands in Mayfair, Kensington, and major UK shopping centres.</p>
+                        <a href="#" class="btn-link text-uppercase">Discover More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer text-light wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">WOODLAND <span style="color: var(--london-accent);">GROUP UK</span></h3>
+                    <p class="text-white-50">Delivering heritage-grade joinery and premium fit-outs across the United Kingdom.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4" style="font-family: 'Inter';">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2 text-decoration-none" href="about.html">Heritage</a>
+                        <a class="text-white-50 mb-2 text-decoration-none" href="services.html">Expertise</a>
+                        <a class="text-white-50 mb-2 text-decoration-none" href="projects.html">Portfolio</a>
+                        <a class="text-white-50 mb-2 text-decoration-none" href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4" style="font-family: 'Inter';">London HQ</h5>
+                    <p class="mb-2 text-white-50"><i class="fa fa-map-marker-alt me-3" style="color: var(--london-accent);"></i>12 Capas Heights Way, Heckmondwike, UK</p>
+                    <p class="mb-2 text-white-50"><i class="fa fa-phone-alt me-3" style="color: var(--london-accent);"></i>+44 1924 975787</p>
+                    <p class="mb-2 text-white-50"><i class="fa fa-envelope me-3" style="color: var(--london-accent);"></i>info.uk@woodland-groups.com</p>
+                    <div class="mt-3 pt-3 border-top border-secondary">
+                        <small class="d-block text-white-50">Reg No: 16688756</small>
+                        <small class="d-block text-white-50">VAT: 501 0661 49</small>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-white-50">© Woodland Group UK. All Right Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
