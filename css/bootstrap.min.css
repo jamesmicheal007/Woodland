@@ -3146,21 +3146,21 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #1842b6;
-    border-color: #1842b6
+    background-color: #FF671F;
+    border-color: #B1B3B3
 }
 
     .btn-primary:hover {
         color: #fff;
-        background-color: #14389b;
-        border-color: #133592
+        background-color: #8D3F2B;
+        border-color: #FF671F;
     }
 
     .btn-check:focus + .btn-primary,
     .btn-primary:focus {
         color: #fff;
-        background-color: #14389b;
-        border-color: #133592;
+        background-color: #B1B3B3;
+        border-color: #FF671F;
         box-shadow: 0 0 0 .25rem rgba(59, 94, 193, .5)
     }
 
@@ -8351,7 +8351,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #1842b6 !important
+    color: #FF671F !important
 }
 
 .text-secondary {
@@ -8415,9 +8415,11 @@ fieldset:disabled .btn {
     background-color: #0D1326 !important
 }
 .bg-secondary {
-    background-color: #ff671fd4 !important
+    background-color: #8D3F2B !important
 }
-
+.bg-third {
+    background-color: #B1B3B3 !important
+}
 .bg-success {
     background-color: #198754 !important
 }
@@ -8456,7 +8458,7 @@ fieldset:disabled .btn {
     background-color: rgba(0, 0, 0, 0) !important
 }
 .bg-servicecard {
-    background-color: #fd7e14bf !important;
+    background-color: #FF671F !important;
 }
 .bg-gradient {
     background-image: var(--bs-gradient) !important

@@ -114,10 +114,10 @@
     
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--bs-secondary) !important;
-}
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link.active {
+        color: var(--bs-primary) !important;
+    }
 
 .navbar .dropdown-toggle::after {
     border: none;
@@ -625,11 +625,13 @@
 }
 
 .contact-map {
-    background: #26d48c;
+    background: #FF671F;
+    border: 1px solid #B1B3B3;
 }
 
 .contact-form {
-    background: #26d48c;
+    background: #8D3F2B;
+    border: 1px solid #B1B3B3;
 }
 
 /*** Contact End ***/
@@ -769,7 +771,7 @@
 .sidesocial {
     position: fixed;
     right: 10px;
-    top: 80%;
+    top: 70%;
     transform: translateY(-50%);
     z-index: 9999;
 }
