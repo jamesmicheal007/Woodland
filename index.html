@@ -48,7 +48,7 @@
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0 sticky-top">
                 <a href="index.html" class="navbar-brand">
-                    <img src="img/logo-small.png" alt="Woodland Groups" class="img-fluid" style="max-height:60px;">
+                    <img src="img/logo-small.png" alt="Woodland Groups" class="img-fluid logo-responsive">
                 </a>
 
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -92,7 +92,8 @@
                     <div class="d-flex flex-column pe-4 border-end">
                         <a href="img/Woodland_Profile.pdf" target="_blank" class="btn btn-primary rounded-pill px-3 py-2 text-white small">
                             <i class="fa fa-download text-white"></i>
-                        Portfolio</a>
+                            Portfolio
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -155,37 +156,63 @@
 
     </div>
 
-    <div class="container-fluid bg-primary py-5">
+    <div class="container-fluid bg-primary py-5 counter-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-third counter-value">99</h1>
-                        <h5 class="text-white mt-1">Success in getting happy customer</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-third counter-value">25</h1>
-                        <h5 class="text-white mt-1">Thousands of successful business</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-third counter-value">120</h1>
-                        <h5 class="text-white mt-1">Total clients who love Woodland Groups</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-third counter-value">5</h1>
-                        <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
-                    </div>
-                </div>
-            </div>
+            <ul class="service__one wow fadeInLeft d-flex flex-wrap justify-content-between list-unstyled m-0 p-0" data-wow-duration="1s" data-wow-delay="0.1s">
+
+                <li class="d-flex align-items-center mb-4 mb-lg-0">
+                    <span class="round__area bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 70px; height: 70px;">
+                        <i class="fas fa-award text-primary fa-2x"></i>
+                    </span>
+                    <article>
+                        <h3 class="fw-bold text-white mb-0 counter-value">12</h3><span class="fw-bold text-white h3">+</span>
+                        <p class="text-white-50 m-0">Years Experience</p>
+                    </article>
+                </li>
+
+                <li class="d-flex align-items-center mb-4 mb-lg-0">
+                    <span class="round__area bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 70px; height: 70px;">
+                        <i class="fas fa-check-double text-primary fa-2x"></i>
+                    </span>
+                    <article>
+                        <h3 class="fw-bold text-white mb-0 counter-value">3000</h3><span class="fw-bold text-white h3">+</span>
+                        <p class="text-white-50 m-0">Projects Done</p>
+                    </article>
+                </li>
+
+                <li class="d-flex align-items-center mb-4 mb-lg-0">
+                    <span class="round__area bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 70px; height: 70px;">
+                        <i class="fas fa-smile text-primary fa-2x"></i>
+                    </span>
+                    <article>
+                        <h3 class="fw-bold text-white mb-0 counter-value">50</h3><span class="fw-bold text-white h3">+</span>
+                        <p class="text-white-50 m-0">Happy Clients</p>
+                    </article>
+                </li>
+
+                <li class="d-flex align-items-center mb-4 mb-lg-0">
+                    <span class="round__area bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 70px; height: 70px;">
+                        <i class="fas fa-calendar-alt text-primary fa-2x"></i>
+                    </span>
+                    <article>
+                        <h3 class="fw-bold text-white mb-0 counter-value">1500</h3><span class="fw-bold text-white h3">+</span>
+                        <p class="text-white-50 m-0">Events Managed</p>
+                    </article>
+                </li>
+
+                <li class="d-flex align-items-center">
+                    <span class="round__area bg-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 70px; height: 70px;">
+                        <i class="fas fa-users text-primary fa-2x"></i>
+                    </span>
+                    <article>
+                        <h3 class="fw-bold text-white mb-0 counter-value">75</h3><span class="fw-bold text-white h3">+</span>
+                        <p class="text-white-50 m-0">Team Members</p>
+                    </article>
+                </li>
+
+            </ul>
         </div>
     </div>
-
     <div class="container-fluid">
         <div class="container pt-5">
             <div class="row g-5">
@@ -526,11 +553,11 @@
 
                     <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
                         <div class="d-flex p-4 rounded h-100 contact-card-bg"
-                             style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('img/landmarks/dubai_skyline.jpg');">
+                             style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,05)), url('img/landmarks/dubai_skyline.jpg');">
                             <div class="text-white">
                                 <h5 class="text-primary mb-3">Dubai, UAE (Headquarters)</h5>
                                 <h5 class="small mb-2 text-white">Woodland Technical Works LLC</h5>
-                                <p class="small mb-2 text-white-50"><i class="fas fa-map-marker-alt text-primary me-2"></i>23A street, Al Quoz Industrial - 4,<br>Post Box: 283441, Dubai, UAE</p>
+                                <p class="small mb-2 text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>23A street, Al Quoz Industrial - 4,<br>Post Box: 283441, Dubai, UAE</p>
                                 <p class="small mb-2"><i class="fa fa-phone text-primary me-2"></i><a href="tel:+97143479485" class="text-white">+971 4 347 9485</a></p>
                                 <p class="small mb-2"><i class="fa fa-mobile text-primary me-2"></i><a href="tel:+971504408582" class="text-white">+971 50 440 8582</a></p>
                                 <p class="small mb-0"><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:info.dubai@woodland-groups.com" class="text-white">info.dubai@woodland-groups.com</a></p>
@@ -540,11 +567,11 @@
 
                     <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
                         <div class="d-flex p-4 rounded h-100 contact-card-bg"
-                             style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('img/landmarks/london_tower_bridge.jpg');">
+                             style="background: linear-gradient(rgba(0,0,0,05), rgba(0,0,0,0.5)), url('img/landmarks/london_tower_bridge.jpg');">
                             <div class="text-white">
                                 <h5 class="text-primary mb-3">London, United Kingdom</h5>
                                 <h5 class="small mb-2 text-white">Woodland Fitout, Events & Exhibition Private LTD</h5>
-                                <p class="small mb-2 text-white-50"><i class="fas fa-map-marker-alt text-primary me-2"></i>12 Capas Heights Way, Heckmondwike,<br>England WF16 0DW</p>
+                                <p class="small mb-2 text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>12 Capas Heights Way, Heckmondwike,<br>England WF16 0DW</p>
                                 <p class="small mb-2"><i class="fa fa-phone text-primary me-2"></i><a href="tel:+441924975787" class="text-white">+44 1924 975787</a></p>
                                 <p class="small mb-2"><i class="fa fa-mobile text-primary me-2"></i><a href="tel:+447440407290" class="text-white">+44 7440 407290</a></p>
                                 <p class="small mb-2"><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:info.uk@woodland-groups.com" class="text-white">info.uk@woodland-groups.com</a></p>
@@ -554,11 +581,11 @@
 
                     <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
                         <div class="d-flex p-4 rounded h-100 contact-card-bg"
-                             style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('img/landmarks/mumbai_gateway.jpg');">
+                             style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('img/landmarks/mumbai_gateway.jpg');">
                             <div class="text-white">
                                 <h5 class="text-primary mb-3">Mumbai, India</h5>
                                 <h5 class="small mb-2 text-white">Woodland Interior & Events</h5>
-                                <p class="small mb-2 text-white-50"><i class="fas fa-map-marker-alt text-primary me-2"></i>Unit B-2, Vaibhav, Sahar Pipeline Road,<br>Andheri East, Mumbai 400099</p>
+                                <p class="small mb-2 text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>Unit B-2, Vaibhav, Sahar Pipeline Road,<br>Andheri East, Mumbai 400099</p>
                                 <p class="small mb-2"><i class="fa fa-mobile text-primary me-2"></i><a href="tel:+917413991111" class="text-white">+91 74139 91111</a></p>
                                 <p class="small mb-0"><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:info.mumbai@woodland-groups.com" class="text-white">info.mumbai@woodland-groups.com</a></p>
                             </div>
@@ -601,7 +628,7 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <a href="index.html" class="navbar-brand">
-                        <img src="img/logo-small.png" alt="Woodland Groups" class="img-fluid" style="max-height:60px;">
+                        <img src="img/logo-small.png" alt="Woodland Groups" class="img-fluid logo-responsive">
                     </a>
                     <p class="text-light">Woodland Group is a premier production house delivering bespoke event setups, exhibition stands, interior fit-outs, custom kiosks, precision joinery, and end-to-end branding solutions with exceptional craftsmanship and innovation.</p>
                     <div class="d-flex hightech-link">
