@@ -357,7 +357,7 @@
 }
 
 .services-item:hover .services-content-icon p {
-    color: var(--bs-white);
+    color: var(--bs-secondary);
 }
 
 /*** Services End ***/

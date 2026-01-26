@@ -3191,14 +3191,14 @@ fieldset:disabled .btn {
 
 .btn-secondary {
     color: #000;
-    background-color: #ff671fd4;
+    background-color: #ff671f;
     border-color: #FF671F;
 }
 
     .btn-secondary:hover {
         color: #000;
-        background-color: #47da9d;
-        border-color: #3cd898
+        background-color: #B1B3B3;
+        border-color: #8D3F2B
     }
 
     .btn-check:focus + .btn-secondary,
