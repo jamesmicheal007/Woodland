@@ -566,8 +566,7 @@
 /*** Testimonial Start ***/
 
 .testimonial-item {
-    background: #e3f0eb;
-
+    background: #ff671f3b;
 }
 
 .testimonial-carousel .owl-dots {
@@ -618,7 +617,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, .3)), url(../img/background.jpg) center center no-repeat;
+    background: linear-gradient(#B1B3B3, rgba(230, 250, 245, .3)), url(../img/background.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     z-index: -1;
