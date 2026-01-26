@@ -1143,3 +1143,137 @@
         color: #fff;
         background-color: rgba(255, 255, 255, .15);
     }
+
+/* --- Team Page "Perfect" Design --- */
+
+/* Leader Card Enhancements */
+.leader-card {
+    border: 1px solid rgba(255, 103, 31, 0.3); /* Primary color border hint */
+    box-shadow: 0 10px 40px rgba(255, 103, 31, 0.15); /* Orange glow */
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.85); /* Slightly less transparent */
+}
+
+/* Image Wrappers */
+.team-img-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.leader-card .team-img-wrapper {
+    width: 180px;
+    height: 180px;
+    border-color: var(--primary);
+}
+
+.small-img {
+    width: 100px;
+    height: 100px;
+}
+
+.team-card:hover .team-img-wrapper {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Connector Lines (The Tree Structure) */
+.hierarchy-line-vertical {
+    position: absolute;
+    bottom: -50px; /* Extends down from CEO row */
+    left: 50%;
+    width: 2px;
+    height: 50px; /* Height of gap between rows */
+    background: linear-gradient(to bottom, var(--primary), rgba(0,0,0,0.2));
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.hierarchy-line-horizontal-managers {
+    position: absolute;
+    top: -25px; /* Positioned in the gap above managers */
+    left: 16%; /* Start halfway through first manager col */
+    right: 16%; /* End halfway through last manager col */
+    height: 2px;
+    border-top: 2px dashed rgba(0,0,0,0.2);
+    z-index: 0;
+    width: 75% !important;
+
+}
+
+/* Add a vertical connector from the horizontal line to each manager card */
+.tier-2 .col-lg-4::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 2px;
+    height: 25px;
+    background: rgba(0,0,0,0.2);
+    transform: translateX(-50%);
+}
+
+.hierarchy-line-vertical-lower {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 2px;
+    height: 25px;
+    background: rgba(0,0,0,0.2);
+    transform: translateX(-50%);
+}
+
+/* Social Icons Hover */
+.team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--light);
+    color: var(--primary);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+    .team-social a:hover {
+        background: var(--primary);
+        color: #fff;
+        transform: translateY(-3px);
+    }
+
+/* Staff Cards */
+.small-card {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+    .small-card:hover {
+        background: #fff;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+    .hierarchy-line-vertical,
+    .hierarchy-line-horizontal-managers,
+    .tier-2 .col-lg-4::before,
+    .hierarchy-line-vertical-lower {
+        display: none; /* Hide complex lines on mobile */
+    }
+
+    .team-section .row {
+        margin-bottom: 2rem !important;
+    }
+}

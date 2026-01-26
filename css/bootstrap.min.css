@@ -235,7 +235,7 @@ sup {
 }
 
 a {
-    color: #1842b6;
+    color: #FF671F;
     text-decoration: none
 }
 
@@ -4202,7 +4202,7 @@ fieldset:disabled .btn {
     .dropdown-item:active {
         color: #fff;
         text-decoration: none;
-        background-color: #1842b6
+        background-color: #8D3F2B
     }
 
     .dropdown-item.disabled,
@@ -7374,7 +7374,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #1842b6 !important
+    border-color: #FF671F !important
 }
 
 .border-secondary {
