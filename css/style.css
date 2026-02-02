@@ -1212,7 +1212,7 @@
 }
 
 /* Add a vertical connector from the horizontal line to each manager card */
-.tier-2 .col-lg-4::before {
+/*.tier-2 .col-lg-4::before {
     content: '';
     position: absolute;
     top: -25px;
@@ -1221,7 +1221,7 @@
     height: 25px;
     background: rgba(0,0,0,0.2);
     transform: translateX(-50%);
-}
+}*/
 
 .hierarchy-line-vertical-lower {
     position: absolute;
