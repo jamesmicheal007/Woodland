@@ -629,7 +629,7 @@
 }
 
 .contact-form {
-    background: #8D3F2B;
+    background: #8C1D18;
     border: 1px solid #B1B3B3;
 }
 
@@ -1163,7 +1163,7 @@
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     background: #fff;
-    transition: transform 0.3s ease;
+    /*transition: transform 0.3s ease;*/
 }
 
 .leader-card .team-img-wrapper {
@@ -1178,7 +1178,7 @@
 }
 
 .team-card:hover .team-img-wrapper {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 
 .team-card img {
@@ -1289,7 +1289,7 @@
 }
 /* --- Counter Section Styles --- */
 .counter-section {
-    background: linear-gradient(rgba(255, 103, 31, 0.95), rgba(255, 103, 31, 0.95)), url('../img/background.jpg');
+    background: linear-gradient(#FF671F, #8C1D18), url('../img/background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

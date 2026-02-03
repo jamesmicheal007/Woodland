@@ -47,7 +47,7 @@
             width: 2px;
             height: 50px;
             background: linear-gradient(to bottom, var(--primary), rgba(0,0,0,0.2));
-            transform: translateX(-50%);
+            /*transform: translateX(-50%);*/
             z-index: 0;
         }
 
@@ -59,7 +59,7 @@
             width: 2px;
             height: 50px;
             background: rgba(0,0,0,0.2);
-            transform: translateX(-50%);
+            /*transform: translateX(-50%);*/
             z-index: 0;
         }
 
@@ -154,7 +154,7 @@
                             <div class="img-glow"></div>
                             <img src="img/founder__img.jpg" alt="CEO" class="img-fluid rounded-circle">
                         </div>
-                        <h3 class="mb-1 text-third">SURENDRA SHARMA</h3>
+                        <a href="founder.html"> <h3 class="mb-1 text-third">SURENDRA SHARMA</h3></a>
                         <p class="text-primary fw-bold text-uppercase ls-2">Founder & CEO</p>
                     </div>
                 </div>
@@ -171,21 +171,19 @@
                         <p class="text-primary text-uppercase small">Business & Operations Director</p>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card glass-card p-4 text-center">
+                        <div class="team-img-wrapper mb-3 mx-auto">
+                            <img src="img/team-3.jpg" alt="Director" class="img-fluid rounded-circle">
+                        </div>
+                        <h4 class="mb-1 text-third">MAMTHA</h4>
+                        <p class="text-primary text-uppercase small">Marketting Director</p>
+                    </div>
+                </div>
                 <!--<div class="hierarchy-line-2"></div>-->
             </div>
 
             <div class="row justify-content-center g-4 mb-5 position-relative tier-3">
-                <!--<div class="hierarchy-bar"></div>-->
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-card glass-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3 mx-auto">
-                            <img src="img/team-2.jpg" alt="Manager" class="img-fluid rounded-circle">
-                        </div>
-                        <h5 class="mb-1 text-third">CHAMPA RAM</h5>
-                        <p class="text-primary text-uppercase small" style="font-size: 12px;">PRODUCTION MANAGER</p>
-                    </div>
-                </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="team-card glass-card p-4 text-center">
                         <div class="team-img-wrapper mb-3 mx-auto">
@@ -195,6 +193,16 @@
                         <p class="text-primary text-uppercase small" style="font-size: 12px;">CREATIVE MANAGER</p>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card glass-card p-4 text-center">
+                        <div class="team-img-wrapper mb-3 mx-auto">
+                            <img src="img/team-2.jpg" alt="Manager" class="img-fluid rounded-circle">
+                        </div>
+                        <h5 class="mb-1 text-third">CHAMPA RAM</h5>
+                        <p class="text-primary text-uppercase small" style="font-size: 12px;">PRODUCTION MANAGER</p>
+                    </div>
+                </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="team-card glass-card p-4 text-center">
                         <div class="team-img-wrapper mb-3 mx-auto">
@@ -337,10 +345,10 @@
                     const centerY = rect.height / 2;
                     const rotateX = ((y - centerY) / centerY) * -10;
                     const rotateY = ((x - centerX) / centerX) * 10;
-                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+                    /*card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;*/
                 });
                 card.addEventListener('mouseleave', () => {
-                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+                    /*card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';*/
                 });
             });
         });
