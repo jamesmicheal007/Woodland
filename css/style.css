@@ -624,7 +624,7 @@
 }
 
 .contact-map {
-    background: #FF671F;
+    background: #EA8C23;
     border: 1px solid #B1B3B3;
 }
 
@@ -849,7 +849,7 @@
         }
 }
 .navbar-container {
-    border-bottom: 2px solid #FF671F; /* bottom line */
+    border-bottom: 2px solid #EA8C23; /* bottom line */
 }
 .clients-section {
     background-color: #f9f9f9;
@@ -1289,7 +1289,7 @@
 }
 /* --- Counter Section Styles --- */
 .counter-section {
-    background: linear-gradient(#FF671F, #8C1D18), url('../img/background.jpg');
+    background: linear-gradient(#EA8C23, #8C1D18), url('../img/background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

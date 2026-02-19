@@ -3,7 +3,7 @@
 
 /* Target elements specific to London using the body class */
 body.region-london {
-    --bs-primary: #FF671F; /* Keep primary orange */
+    --bs-primary: #EA8C23; /* Keep primary orange */
     --bs-secondary: #4a6f9a; /* Example: Sophisticated blue-grey for secondary */
     --bs-woodprimary: var(--bs-primary); /* Keep woodprimary as primary */
 }
