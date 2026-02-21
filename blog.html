@@ -204,60 +204,79 @@
                 success: function (xml) {
                     $('#blog-grid').empty(); // Clear spinner
 
+                    var blogsArray = [];
+
+                    // 1. Extract all blogs into an array
                     $(xml).find('blog').each(function () {
-                        var id = $(this).find('id').text();
-                        var title = $(this).find('title').text();
-                        var date = $(this).find('date').text();
-                        var author = $(this).find('author').text();
-                        var image = $(this).find('image').text();
-                        var summary = $(this).find('summary').text();
-                        var likes = parseInt($(this).find('likes').text());
+                        var blogObj = {
+                            id: $(this).find('id').text(),
+                            title: $(this).find('title').text(),
+                            date: $(this).find('date').text(),
+                            author: $(this).find('author').text(),
+                            image: $(this).find('image').text(),
+                            summary: $(this).find('summary').text(),
+                            likes: parseInt($(this).find('likes').text())
+                        };
+                        blogsArray.push(blogObj);
+                    });
+
+                    // 2. Sort the array by date (Latest first)
+                    blogsArray.sort(function (a, b) {
+                        return new Date(b.date) - new Date(a.date);
+                    });
+
+                    // 3. Loop through the sorted array to generate HTML
+                    blogsArray.forEach(function (blog) {
+                        var id = blog.id;
+                        var title = blog.title;
+                        var date = blog.date;
+                        var author = blog.author;
+                        var image = blog.image;
+                        var summary = blog.summary;
+                        var likes = blog.likes;
 
                         // Check LocalStorage for User Likes
                         var storedLikes = localStorage.getItem('blog_like_' + id);
                         var isLiked = false;
                         if (storedLikes) {
                             likes = parseInt(storedLikes);
-                            // Simple check if user already clicked (simulated)
-                            if (likes > parseInt($(this).find('likes').text())) {
-                                isLiked = true;
-                            }
+                            isLiked = true; // If it's in local storage, this user liked it
                         }
 
                         var heartClass = isLiked ? 'fas fa-heart' : 'far fa-heart';
                         var activeClass = isLiked ? 'liked' : '';
 
                         var blogHTML = `
-                                 <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".3s">
-                                     <div class="blog-item position-relative overflow-hidden rounded bg-light h-100 d-flex flex-column">
-                                         <div class="blog-img-box">
-                                             <img class="img-fluid" src="${image}" alt="${title}">
-                                         </div>
-                                         <div class="p-4 d-flex flex-column flex-grow-1">
-                                             <div class="d-flex mb-3 text-secondary small">
-                                                 <span class="me-3"><i class="far fa-user text-primary me-2"></i>${author}</span>
-                                                 <span><i class="far fa-calendar-alt text-primary me-2"></i>${date}</span>
-                                             </div>
-                                             <h5 class="mb-3">${title}</h5>
-                                             <p>${summary}</p>
+                                <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".3s">
+                                    <div class="blog-item position-relative overflow-hidden rounded bg-light h-100 d-flex flex-column">
+                                        <div class="blog-img-box">
+                                            <img class="img-fluid" src="${image}" alt="${title}">
+                                        </div>
+                                        <div class="p-4 d-flex flex-column flex-grow-1">
+                                            <div class="d-flex mb-3 text-secondary small">
+                                                <span class="me-3"><i class="far fa-user text-primary me-2"></i>${author}</span>
+                                                <span><i class="far fa-calendar-alt text-primary me-2"></i>${date}</span>
+                                            </div>
+                                            <h5 class="mb-3">${title}</h5>
+                                            <p>${summary}</p>
 
-                                             <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
-                                                 <a href="blog-detail.html?id=${id}" class="text-primary fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
+                                            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                                                <a href="blog-detail.html?id=${id}" class="text-primary fw-bold">Read More <i class="bi bi-arrow-right"></i></a>
 
-                                                 <div class="d-flex gap-3">
-                                                     <span class="action-btn like-trigger ${activeClass}" data-id="${id}" data-base="${likes}">
-                                                         <i class="${heartClass}"></i> <span class="like-count">${likes}</span>
-                                                     </span>
+                                                <div class="d-flex gap-3">
+                                                    <span class="action-btn like-trigger ${activeClass}" data-id="${id}">
+                                                        <i class="${heartClass}"></i> <span class="like-count">${likes}</span>
+                                                    </span>
 
-                                                     <span class="action-btn share-trigger" data-title="${title}" data-id="${id}">
-                                                         <i class="fas fa-share-alt"></i>
-                                                     </span>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             `;
+                                                    <span class="action-btn share-trigger" data-title="${title}" data-id="${id}">
+                                                        <i class="fas fa-share-alt"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
                         $('#blog-grid').append(blogHTML);
                     });
                 },

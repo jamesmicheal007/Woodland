@@ -113,15 +113,19 @@
                 <a href="index.html" class="navbar-brand">
                     <img src="img/logo-small.png" alt="Woodland Groups" class="img-fluid logo-responsive">
                 </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse bg-transparent border-end" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="services.html" class="nav-item nav-link">Services</a>
-                        <a href="projects.html" class="nav-item nav-link">Projects</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded">
@@ -131,7 +135,29 @@
                                 <a href="blog.html" class="dropdown-item">Blogs</a>
                             </div>
                         </div>
+
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+
+                <div class="d-none d-xl-flex flex-shrink-0" style="padding-left:20px">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="tel:+971504408582" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-woodprimary fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px;">
+                                <span><i class="fa fa-comment-dots text-white"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-4">
+                        <span class="text-white">Have any questions?</span>
+                        <span class="text-secondary">Call: +971 50 440 8582</span>
+                    </div>
+                    <div class="d-flex flex-column pe-4 border-end">
+                        <a href="img/Woodland_Profile.pdf" target="_blank" class="btn btn-primary rounded-pill px-3 py-2 text-white small">
+                            <i class="fa fa-download text-white"></i>
+                            Portfolio
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -189,7 +215,7 @@
                         <div class="team-img-wrapper mb-3 mx-auto">
                             <img src="img/Team/team-4.jpg" alt="Manager" class="img-fluid rounded-circle">
                         </div>
-                        <h5 class="mb-1 text-third">SURESH</h5>
+                        <h6 class="mb-1 text-third">SURESH</h6>
                         <p class="text-primary text-uppercase small" style="font-size: 12px;">CREATIVE MANAGER</p>
                     </div>
                 </div>
@@ -198,7 +224,7 @@
                         <div class="team-img-wrapper mb-3 mx-auto">
                             <img src="img/Team/team-5.jpg" alt="Manager" class="img-fluid rounded-circle">
                         </div>
-                        <h5 class="mb-1 text-third">CHAMPA RAM</h5>
+                        <h6 class="mb-1 text-third">CHAMPA RAM</h6>
                         <p class="text-primary text-uppercase small" style="font-size: 12px;">PRODUCTION MANAGER</p>
                     </div>
                 </div>
@@ -208,7 +234,7 @@
                         <div class="team-img-wrapper mb-3 mx-auto">
                             <img src="img/Team/team-6.jpg" alt="Manager" class="img-fluid rounded-circle">
                         </div>
-                        <h5 class="mb-1 text-third">ANJUGAM MAHALINGAM</h5>
+                        <h6 class="mb-1 text-third">ANJUGAM MAHALINGAM</h6>
                         <p class="text-primary text-uppercase small" style="font-size: 12px;">ACCOUNTS MANAGER</p>
                     </div>
                 </div>
@@ -217,7 +243,7 @@
                         <div class="team-img-wrapper mb-3 mx-auto">
                             <img src="img/Team/team-7.jpg" alt="Manager" class="img-fluid rounded-circle">
                         </div>
-                        <h5 class="mb-1 text-third">ISLAM KHAN</h5>
+                        <h6 class="mb-1 text-third">ISLAM KHAN</h6>
                         <p class="text-primary text-uppercase small" style="font-size: 12px;">LOGISTIC MANAGER</p>
                     </div>
                 </div>
@@ -225,30 +251,30 @@
 
             <div class="row justify-content-center g-4 tier-4">
                 <div class="col-md-4 col-lg-4">
-                    <div class="team-card glass-card p-3 text-center small-card">
+                    <div class="team-card glass-card p-3 text-center">
                         <div class="team-img-wrapper mb-2 mx-auto small-img" style="width: 100px; height: 100px;">
                             <img src="img/Team/team-8.jpg" alt="Exec" class="img-fluid rounded-circle">
                         </div>
                         <h6 class="mb-0 text-third">VINOTH KUMAR</h6>
-                        <small class="text-muted">OPERATIONS EXECUTIVE</small>
+                        <small class="text-primary">OPERATIONS EXECUTIVE</small>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <div class="team-card glass-card p-3 text-center small-card">
+                    <div class="team-card glass-card p-3 text-center ">
                         <div class="team-img-wrapper mb-2 mx-auto small-img" style="width: 100px; height: 100px;">
                             <img src="img/Team/team-9.jpg" alt="Exec" class="img-fluid rounded-circle">
                         </div>
                         <h6 class="mb-0 text-third">MOHAMMAD MAHBUB</h6>
-                        <small class="text-muted">CREATIVE DESIGNER</small>
+                        <small class="text-primary">CREATIVE DESIGNER</small>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <div class="team-card glass-card p-3 text-center small-card">
+                    <div class="team-card glass-card p-3 text-center">
                         <div class="team-img-wrapper mb-2 mx-auto small-img" style="width: 100px; height: 100px;">
                             <img src="img/Team/team-10.jpg" alt="Exec" class="img-fluid rounded-circle">
                         </div>
                         <h6 class="mb-0 text-third">SOHAIL AHMAD</h6>
-                        <small class="text-muted">CREATIVE DESIGNER</small>
+                        <small class="text-primary">CREATIVE DESIGNER</small>
                     </div>
                 </div>
             </div>
